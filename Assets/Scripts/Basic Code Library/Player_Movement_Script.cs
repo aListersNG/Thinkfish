@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Player_Movement_Script : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Player_Movement_Script : MonoBehaviour
     public float EntryPosition;
     public Transform playerTransform;
     private Rigidbody2D player;
+    public Sprite Testsprite;
 
     //For animation use these variables
     public Sprite[] animationWalk;
@@ -134,6 +136,7 @@ public class Player_Movement_Script : MonoBehaviour
         {
             displayingUI = true;
             UI.ShowUI();
+            UI.SetImage(Testsprite);
         }
     }
 }

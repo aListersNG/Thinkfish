@@ -29,12 +29,12 @@ public class UIManager : MonoBehaviour {
     //Set the text to whatever prompt has been handed in
     public void SetText(UnityEngine.UI.Text text)
     {
-
+        myText.text = text.text;
     }
 
     //Set the passed in Image
-    public void SetImage(UnityEngine.UI.Image image)
+    public void SetImage(Sprite image)
     {
-
+        myImage.sprite = image;
     }
 }
