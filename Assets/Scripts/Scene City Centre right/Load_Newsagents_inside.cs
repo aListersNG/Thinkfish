@@ -3,9 +3,10 @@ using System.Collections;
 
 public class Load_Newsagents_inside : MonoBehaviour
 {
-    void start(Collider2D col)
+    
+    void Start()
     {
-        
+        gameObject.GetComponent<Renderer>().enabled = false;
     }
 
     void OnTriggerStay2D(Collider2D col)
