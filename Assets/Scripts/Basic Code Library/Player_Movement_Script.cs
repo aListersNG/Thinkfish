@@ -111,7 +111,7 @@ public class Player_Movement_Script : MonoBehaviour
             //Change the sprite displayed
             //Reset animation timer
             timeToChange = 0.2f;
-            this.GetComponent<SpriteRenderer>().sprite = animationWalk[counter];
+            GetComponent<SpriteRenderer>().sprite = animationWalk[counter];
         }
         else
         {
