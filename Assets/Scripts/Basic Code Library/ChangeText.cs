@@ -16,7 +16,7 @@ public class ChangeText : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.H))
         {
 
             m_Dialogue = gameObject.GetComponent<Text>();
@@ -36,7 +36,7 @@ public class ChangeText : MonoBehaviour
             }
 
         }
-        if (Input.GetKeyUp(KeyCode.E))
+        if (Input.GetKeyUp(KeyCode.H))
         {
             i++;
         }

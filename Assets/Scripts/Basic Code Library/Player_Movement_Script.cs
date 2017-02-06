@@ -23,7 +23,7 @@ public class Player_Movement_Script : MonoBehaviour
     //For using the UI
     private UIManager UI;
     bool displayingUI;
-
+    public bool talkable;
    
     // Use this for initialization
     void Start()
@@ -125,19 +125,22 @@ public class Player_Movement_Script : MonoBehaviour
 
     void UIExperiment()
 {
-    if (Input.GetKeyDown(KeyCode.H))
-    {
-        if (displayingUI)
+        if (talkable == true)
         {
-            displayingUI = false;
-            UI.HideUI();
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                if (displayingUI)
+                {
+                    displayingUI = false;
+                    UI.HideUI();
+                }
+                else
+                {
+                    displayingUI = true;
+                    UI.ShowUI();
+                    UI.SetImage(Testsprite);
+                }
+            }
         }
-        else
-        {
-            displayingUI = true;
-            UI.ShowUI();
-            UI.SetImage(Testsprite);
-        }
-    }
 }
 }

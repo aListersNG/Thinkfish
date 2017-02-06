@@ -4,12 +4,14 @@ using System.Collections;
 
 public class TestCharacterTalk : MonoBehaviour
 {
-
-	// Use this for initialization
+    public Player_Movement_Script player;
+    bool talkable;
+    // Use this for initialization
     void Start()
     {
         //hide object
         gameObject.GetComponent<Renderer>().enabled = false;
+        talkable = player.talkable;
     }
 
     void OnTriggerStay2D(Collider2D col)
@@ -19,6 +21,7 @@ public class TestCharacterTalk : MonoBehaviour
         if (col.gameObject.tag == "Player")
             {
                 gameObject.GetComponent<Renderer>().enabled = true;
+                player.talkable = true;
             }
 
         //ideally start dialogue here but that's still being developed
@@ -27,5 +30,6 @@ public class TestCharacterTalk : MonoBehaviour
         void OnTriggerExit2D(Collider2D col)
             {
                 gameObject.GetComponent<Renderer>().enabled = false;
+                player.talkable = false;
             }
     }

@@ -48,7 +48,7 @@ public class NPCMovement : MonoBehaviour
         idleTime = 1.0f;
         counter = 0;
 
-        //talkable = player.talkable;
+        talkable = player.talkable;
     }
 	
 	// Update is called once per frame
