@@ -27,9 +27,9 @@ public class UIManager : MonoBehaviour {
     }
 
     //Set the text to whatever prompt has been handed in
-    public void SetText(UnityEngine.UI.Text text)
+    public void SetText(string text)
     {
-        myText.text = text.text;
+        myText.text = text;
     }
 
     //Set the passed in Image
