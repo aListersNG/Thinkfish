@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Alpha_Into_Work_inside.unity
+- path: Assets/Alpha_City_Centre_right.unity
   isLoaded: 1
   isActive: 1

@@ -7,7 +7,6 @@ using System.Collections;
 public class NPCMovement : MonoBehaviour
 {
     public Player_Movement_Script player;
-    bool talkable;
 
 
     //The sprites for the character
@@ -22,7 +21,7 @@ public class NPCMovement : MonoBehaviour
     float startPos, maxX, minX;
 
     //For controlling the movement and speed
-    Rigidbody myBody;
+    Rigidbody2D myBody;
     float moveSpeed, directionPause;
     bool wasGoingLeft, isIdle;
 
@@ -30,7 +29,7 @@ public class NPCMovement : MonoBehaviour
 	void Start ()
     {
         //Get the body
-        myBody = GetComponent<Rigidbody>();
+        myBody = GetComponent<Rigidbody2D>();
 
         //Set the starting position of the sprite
         startPos = transform.position.x;
@@ -47,8 +46,6 @@ public class NPCMovement : MonoBehaviour
         animationSpeed = 0.2f;
         idleTime = 1.0f;
         counter = 0;
-
-        talkable = player.talkable;
     }
 	
 	// Update is called once per frame
@@ -68,12 +65,19 @@ public class NPCMovement : MonoBehaviour
     {
         if(!AtGoal())
         {
-            if (talkable == false)
+            if (player.talkable == false)
             {
                 //Set the velocity
-                myBody.velocity = new Vector3(moveSpeed, myBody.velocity.y, myBody.velocity.z);
+                myBody.velocity = new Vector2(moveSpeed, myBody.velocity.y);
                 //Set the animation
                 MoveAnimation();
+            }
+            else
+            {
+                //Set the target to stop moving
+                myBody.velocity = new Vector2(0.0f, 0.0f);
+                //Play the idle animation
+                IdleAnimation();
             }
         }
         else
@@ -114,7 +118,7 @@ public class NPCMovement : MonoBehaviour
         animationSpeed = 0.2f;
 
         //Stop the character from moving and display the idle sprite
-        myBody.velocity = new Vector3(0.0f, myBody.velocity.y, myBody.velocity.z);
+        myBody.velocity = new Vector2(0.0f, myBody.velocity.y);
         GetComponent<SpriteRenderer>().sprite = idle;
     }
 
