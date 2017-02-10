@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class TestCharacterTalk : MonoBehaviour
+public class ShowWhenTouching : MonoBehaviour
 {
     public Player_Movement_Script player;
     bool talkable;
