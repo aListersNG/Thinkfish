@@ -96,6 +96,7 @@
     <Compile Include="Assets\Scripts\Scene City Centre\Load_Into_Work_Outside.cs" />
     <Compile Include="Assets\Scripts\Scene Home Outside\Load City_Centre_left.cs" />
     <Compile Include="Assets\Scripts\Scene Into Work Inside\Exit_Into_Work.cs" />
+    <Compile Include="Assets\Scripts\Scene Into Work Inside\Load_IntoWork_entrance.cs" />
     <Compile Include="Assets\Scripts\Scene Into Work Inside\Load_Into_Work_groundfloor2.cs" />
     <Compile Include="Assets\Scripts\Scene Into Work outside\Into_Work_Door.cs" />
     <Compile Include="Assets\Scripts\Scene Main Menu\Load_Level_Script.cs" />
