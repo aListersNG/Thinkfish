@@ -81,6 +81,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Load_New_Scene.cs" />
+    <Compile Include="Assets\Press_E_To_Enter_New_Scene.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\ChangeText.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\NPCMovement.cs" />
