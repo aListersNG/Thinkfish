@@ -81,12 +81,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Load_New_Scene.cs" />
-    <Compile Include="Assets\Press_E_To_Enter_New_Scene.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\ChangeText.cs" />
+    <Compile Include="Assets\Scripts\Basic Code Library\LibraryNPC.cs" />
+    <Compile Include="Assets\Scripts\Basic Code Library\Load_New_Scene.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\NPCMovement.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\Player_Movement_Script.cs" />
+    <Compile Include="Assets\Scripts\Basic Code Library\Press_E_To_Enter_New_Scene.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\ShowWhenTouching.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\UIManager.cs" />
     <Compile Include="Assets\Scripts\Scene Bakery\Exit_Bakery.cs" />

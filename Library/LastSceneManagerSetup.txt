@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Library_Challenge_1.unity
+- path: Assets/Into_Work_consultation_office.unity
   isLoaded: 1
   isActive: 1
