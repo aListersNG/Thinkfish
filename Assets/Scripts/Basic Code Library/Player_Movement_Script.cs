@@ -24,7 +24,7 @@ public class Player_Movement_Script : MonoBehaviour
     private UIManager UI;
     bool displayingUI;
     public bool talkable;
-   
+
     // Use this for initialization
     void Start()
     {
@@ -138,7 +138,7 @@ public class Player_Movement_Script : MonoBehaviour
                 {
                     displayingUI = true;
                     UI.ShowUI();
-                    UI.SetImage(Testsprite);
+                    //UI.SetImage(Testsprite);
                 }
             }
         }

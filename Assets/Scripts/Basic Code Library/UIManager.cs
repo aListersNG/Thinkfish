@@ -6,9 +6,10 @@ public class UIManager : MonoBehaviour {
 
     public UnityEngine.UI.Text myText;
     public UnityEngine.UI.Image myImage;
+    public UnityEngine.UI.Image textBox;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         HideUI();
 	}
 	
@@ -17,6 +18,7 @@ public class UIManager : MonoBehaviour {
     {
         myText.enabled = true;
         myImage.enabled = true;
+        textBox.enabled = true;
     }
 
     //Hide the UI from being seen
@@ -24,6 +26,7 @@ public class UIManager : MonoBehaviour {
     {
         myText.enabled = false;
         myImage.enabled = false;
+        textBox.enabled = false;
     }
 
     //Set the text to whatever prompt has been handed in
@@ -36,5 +39,10 @@ public class UIManager : MonoBehaviour {
     public void SetImage(Sprite image)
     {
         myImage.sprite = image;
+    }
+
+    public void SetTextBox(Sprite box)
+    {
+        textBox.sprite = box;
     }
 }
