@@ -103,6 +103,8 @@
     <Compile Include="Assets\Scripts\Scene Into Work Inside\Load_IntoWork_entrance.cs" />
     <Compile Include="Assets\Scripts\Scene Into Work Inside\Load_Into_Work_groundfloor2.cs" />
     <Compile Include="Assets\Scripts\Scene Into Work outside\Into_Work_Door.cs" />
+    <Compile Include="Assets\Scripts\Scene Library Bookshelves\PickupGame.cs" />
+    <Compile Include="Assets\Scripts\Scene Library Bookshelves\PutBookAway.cs" />
     <Compile Include="Assets\Scripts\Scene Main Menu\Load_Level_Script.cs" />
     <Compile Include="Assets\Scripts\Scene Newsagents\Exit_Newsagents.cs" />
   </ItemGroup>
