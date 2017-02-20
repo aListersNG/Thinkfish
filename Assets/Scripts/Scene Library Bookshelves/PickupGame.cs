@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,19 +16,18 @@ public class PickupGame : MonoBehaviour
         {
             Instantiate(prefab, new Vector3(UnityEngine.Random.Range(0f, 5f), -2.5f, 0), Quaternion.identity);
         }
-
+        howManyBooks = 5;
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-		
+		if (howManyBooks < 5)
+        {
+            Instantiate(prefab, new Vector3(UnityEngine.Random.Range(0f, 5f), -2.5f, 0), Quaternion.identity);
+            howManyBooks++;
+        }
 	}
-
-    void increaseScore()
-    {
-        score++;
-    }
 
     
 }

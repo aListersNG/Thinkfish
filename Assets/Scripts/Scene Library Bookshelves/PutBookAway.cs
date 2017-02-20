@@ -16,7 +16,7 @@ public class PutBookAway : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     void OnTriggerStay2D(Collider2D col)
@@ -24,6 +24,8 @@ public class PutBookAway : MonoBehaviour
         if (col.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E)) // Developed by Andrew McGonigal
         {
             Destroy(gameObject);
+            BookIcon.GetComponent<PickupGame>().score += 1;
+            BookIcon.GetComponent<PickupGame>().howManyBooks -= 1;
         }
 
     }

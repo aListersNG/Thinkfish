@@ -7,766 +7,29 @@ Direct3D:
     VRAM:     977 MB
     Driver:   9.18.13.4475
 Begin MonoManager ReloadAssembly
-Platform assembly: \\StuHome\HomeDrive5$\1400655\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading \\StuHome\HomeDrive5$\1400655\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: \\StuHome\HomeDrive5$\1400655\Thinkfish\Thinkfishgame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading \\StuHome\HomeDrive5$\1400655\Thinkfish\Thinkfishgame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: \\StuHome\HomeDrive5$\1400655\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading \\StuHome\HomeDrive5$\1400655\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: \\StuHome\HomeDrive5$\1400655\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading \\StuHome\HomeDrive5$\1400655\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: \\StuHome\HomeDrive5$\1400655\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading \\StuHome\HomeDrive5$\1400655\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.896 seconds
-Platform assembly: \\StuHome\HomeDrive5$\1400655\Thinkfish\Thinkfishgame_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: \\StuHome\HomeDrive5$\1400655\Thinkfish\Thinkfishgame_Data\Managed\System.dll (this message is harmless)
+Platform assembly: M:\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading M:\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: M:\Thinkfish\Thinkfishgame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading M:\Thinkfish\Thinkfishgame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: M:\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading M:\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: M:\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading M:\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: M:\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading M:\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.549 seconds
+Platform assembly: M:\Thinkfish\Thinkfishgame_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: M:\Thinkfish\Thinkfishgame_Data\Managed\System.dll (this message is harmless)
 desktop: 1440x900 60Hz; virtual: 1440x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.307264 ms
+UnloadTime: 2.955120 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.351224 ms
+UnloadTime: 5.848020 ms
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 424.
-Total: 0.194036 ms (FindLiveObjects: 0.018281 ms CreateObjectMapping: 0.014753 ms MarkObjects: 0.150097 ms  DeleteObjects: 0.008338 ms)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ChangeText.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ChangeText.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.619311 ms
-
-Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 318.
-Total: 0.289931 ms (FindLiveObjects: 0.026299 ms CreateObjectMapping: 0.031751 ms MarkObjects: 0.196922 ms  DeleteObjects: 0.034317 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.464403 ms
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 283.
-Total: 0.253369 ms (FindLiveObjects: 0.021167 ms CreateObjectMapping: 0.032392 ms MarkObjects: 0.185055 ms  DeleteObjects: 0.014432 ms)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnloadTime: 0.486853 ms
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.270046 ms (FindLiveObjects: 0.021809 ms CreateObjectMapping: 0.030147 ms MarkObjects: 0.205581 ms  DeleteObjects: 0.011866 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.458309 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.263953 ms (FindLiveObjects: 0.022771 ms CreateObjectMapping: 0.030468 ms MarkObjects: 0.203978 ms  DeleteObjects: 0.005772 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.480439 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.252727 ms (FindLiveObjects: 0.023733 ms CreateObjectMapping: 0.030789 ms MarkObjects: 0.192111 ms  DeleteObjects: 0.005452 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.294421 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.507380 ms (FindLiveObjects: 0.076652 ms CreateObjectMapping: 0.019563 ms MarkObjects: 0.399938 ms  DeleteObjects: 0.007376 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.800198 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.263632 ms (FindLiveObjects: 0.019243 ms CreateObjectMapping: 0.039448 ms MarkObjects: 0.194998 ms  DeleteObjects: 0.009621 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.412126 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.234446 ms (FindLiveObjects: 0.024695 ms CreateObjectMapping: 0.028544 ms MarkObjects: 0.175754 ms  DeleteObjects: 0.004490 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.398655 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.247275 ms (FindLiveObjects: 0.023733 ms CreateObjectMapping: 0.038807 ms MarkObjects: 0.179282 ms  DeleteObjects: 0.004810 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.416936 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.250482 ms (FindLiveObjects: 0.023091 ms CreateObjectMapping: 0.037524 ms MarkObjects: 0.184093 ms  DeleteObjects: 0.005131 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.425917 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.257859 ms (FindLiveObjects: 0.028864 ms CreateObjectMapping: 0.038165 ms MarkObjects: 0.184735 ms  DeleteObjects: 0.005131 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.418540 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.252086 ms (FindLiveObjects: 0.020205 ms CreateObjectMapping: 0.029827 ms MarkObjects: 0.196281 ms  DeleteObjects: 0.005131 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.397693 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.247275 ms (FindLiveObjects: 0.020846 ms CreateObjectMapping: 0.037524 ms MarkObjects: 0.182490 ms  DeleteObjects: 0.005452 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.421747 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.255614 ms (FindLiveObjects: 0.022129 ms CreateObjectMapping: 0.038165 ms MarkObjects: 0.189866 ms  DeleteObjects: 0.005131 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.401221 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.263311 ms (FindLiveObjects: 0.023412 ms CreateObjectMapping: 0.039127 ms MarkObjects: 0.194998 ms  DeleteObjects: 0.005131 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.433935 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.260745 ms (FindLiveObjects: 0.023412 ms CreateObjectMapping: 0.037845 ms MarkObjects: 0.193715 ms  DeleteObjects: 0.004810 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.317513 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.268443 ms (FindLiveObjects: 0.023733 ms CreateObjectMapping: 0.030468 ms MarkObjects: 0.208468 ms  DeleteObjects: 0.005452 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.429765 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.257538 ms (FindLiveObjects: 0.019563 ms CreateObjectMapping: 0.029827 ms MarkObjects: 0.202374 ms  DeleteObjects: 0.005131 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.379412 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.259142 ms (FindLiveObjects: 0.021809 ms CreateObjectMapping: 0.029506 ms MarkObjects: 0.201733 ms  DeleteObjects: 0.005772 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.449329 ms
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 283.
-Total: 0.275178 ms (FindLiveObjects: 0.022450 ms CreateObjectMapping: 0.040410 ms MarkObjects: 0.199488 ms  DeleteObjects: 0.011866 ms)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Scene 'Alpha_Into_Work_hallway' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 127)
-
-Scene 'Alpha_Into_Work_hallway' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 127)
-
-Scene 'Alpha_Into_Work_hallway' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 127)
-
-Scene 'Alpha_Into_Work_hallway' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 127)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnloadTime: 0.362093 ms
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 273.
-Total: 0.309174 ms (FindLiveObjects: 0.020846 ms CreateObjectMapping: 0.029827 ms MarkObjects: 0.246634 ms  DeleteObjects: 0.011225 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.350547 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 273.
-Total: 0.244389 ms (FindLiveObjects: 0.020205 ms CreateObjectMapping: 0.029185 ms MarkObjects: 0.189225 ms  DeleteObjects: 0.005131 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.328738 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 273.
-Total: 0.238616 ms (FindLiveObjects: 0.020846 ms CreateObjectMapping: 0.029185 ms MarkObjects: 0.182490 ms  DeleteObjects: 0.005452 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.328417 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 273.
-Total: 0.235408 ms (FindLiveObjects: 0.021167 ms CreateObjectMapping: 0.029185 ms MarkObjects: 0.179603 ms  DeleteObjects: 0.005131 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.389996 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 273.
-Total: 0.254331 ms (FindLiveObjects: 0.022129 ms CreateObjectMapping: 0.029827 ms MarkObjects: 0.195960 ms  DeleteObjects: 0.005772 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.355679 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 273.
-Total: 0.248558 ms (FindLiveObjects: 0.022129 ms CreateObjectMapping: 0.029506 ms MarkObjects: 0.191470 ms  DeleteObjects: 0.005131 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.344774 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 273.
-Total: 0.247596 ms (FindLiveObjects: 0.022771 ms CreateObjectMapping: 0.029506 ms MarkObjects: 0.189225 ms  DeleteObjects: 0.005452 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.355679 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 273.
-Total: 0.257538 ms (FindLiveObjects: 0.024374 ms CreateObjectMapping: 0.029506 ms MarkObjects: 0.197243 ms  DeleteObjects: 0.005452 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.391599 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 273.
-Total: 0.277423 ms (FindLiveObjects: 0.031109 ms CreateObjectMapping: 0.027902 ms MarkObjects: 0.211675 ms  DeleteObjects: 0.005772 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.249520 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 273.
-Total: 0.196281 ms (FindLiveObjects: 0.019243 ms CreateObjectMapping: 0.030147 ms MarkObjects: 0.143041 ms  DeleteObjects: 0.003207 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.336756 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 273.
-Total: 0.260425 ms (FindLiveObjects: 0.020526 ms CreateObjectMapping: 0.037845 ms MarkObjects: 0.195639 ms  DeleteObjects: 0.005131 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.367545 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 273.
-Total: 0.213920 ms (FindLiveObjects: 0.028223 ms CreateObjectMapping: 0.023091 ms MarkObjects: 0.157794 ms  DeleteObjects: 0.004169 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.310778 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 273.
-Total: 0.239899 ms (FindLiveObjects: 0.020205 ms CreateObjectMapping: 0.039448 ms MarkObjects: 0.174472 ms  DeleteObjects: 0.004810 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.304684 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 273.
-Total: 0.237654 ms (FindLiveObjects: 0.019884 ms CreateObjectMapping: 0.029185 ms MarkObjects: 0.182490 ms  DeleteObjects: 0.005131 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.330983 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 273.
-Total: 0.243426 ms (FindLiveObjects: 0.020846 ms CreateObjectMapping: 0.029506 ms MarkObjects: 0.187621 ms  DeleteObjects: 0.004810 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.339963 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 273.
-Total: 0.279347 ms (FindLiveObjects: 0.021809 ms CreateObjectMapping: 0.048749 ms MarkObjects: 0.202054 ms  DeleteObjects: 0.006093 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.294742 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 273.
-Total: 0.241181 ms (FindLiveObjects: 0.020846 ms CreateObjectMapping: 0.030789 ms MarkObjects: 0.183772 ms  DeleteObjects: 0.005452 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 426.
+Total: 0.291855 ms (FindLiveObjects: 0.020526 ms CreateObjectMapping: 0.020846 ms MarkObjects: 0.221617 ms  DeleteObjects: 0.025978 ms)
 
 NullReferenceException: Object reference not set to an instance of an object
   at UIManager.HideUI () [0x00000] in <filename unknown>:0 
@@ -774,5 +37,1190 @@ NullReferenceException: Object reference not set to an instance of an object
  
 (Filename:  Line: -1)
 
+IndexOutOfRangeException: Array index is out of range.
+  at ChangeText.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.389354 ms
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 323.
+Total: 0.218731 ms (FindLiveObjects: 0.024695 ms CreateObjectMapping: 0.019243 ms MarkObjects: 0.141437 ms  DeleteObjects: 0.033034 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.275499 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 315.
+Total: 0.194998 ms (FindLiveObjects: 0.019563 ms CreateObjectMapping: 0.019884 ms MarkObjects: 0.142720 ms  DeleteObjects: 0.012187 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.409560 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 357.
+Total: 0.284158 ms (FindLiveObjects: 0.032713 ms CreateObjectMapping: 0.032713 ms MarkObjects: 0.206544 ms  DeleteObjects: 0.011545 ms)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ChangeText.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
+  at UIManager.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.366583 ms
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 322.
+Total: 0.255293 ms (FindLiveObjects: 0.029185 ms CreateObjectMapping: 0.039127 ms MarkObjects: 0.152983 ms  DeleteObjects: 0.033354 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.409560 ms
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 357.
+Total: 0.298590 ms (FindLiveObjects: 0.033675 ms CreateObjectMapping: 0.033996 ms MarkObjects: 0.208789 ms  DeleteObjects: 0.021167 ms)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ChangeText.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
+  at UIManager.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.415333 ms
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 330.
+Total: 0.217448 ms (FindLiveObjects: 0.020526 ms CreateObjectMapping: 0.025016 ms MarkObjects: 0.154587 ms  DeleteObjects: 0.016998 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.388072 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 330.
+Total: 0.230277 ms (FindLiveObjects: 0.024054 ms CreateObjectMapping: 0.030147 ms MarkObjects: 0.169661 ms  DeleteObjects: 0.005452 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.417257 ms
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 328.
+Total: 0.298270 ms (FindLiveObjects: 0.024054 ms CreateObjectMapping: 0.034958 ms MarkObjects: 0.217448 ms  DeleteObjects: 0.021488 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.757221 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 285.
+Total: 0.295383 ms (FindLiveObjects: 0.023733 ms CreateObjectMapping: 0.041693 ms MarkObjects: 0.208789 ms  DeleteObjects: 0.018922 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnloadTime: 0.387751 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 317.
+Total: 0.291535 ms (FindLiveObjects: 0.026299 ms CreateObjectMapping: 0.032072 ms MarkObjects: 0.220014 ms  DeleteObjects: 0.012508 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.454461 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 317.
+Total: 0.277102 ms (FindLiveObjects: 0.034317 ms CreateObjectMapping: 0.031109 ms MarkObjects: 0.205581 ms  DeleteObjects: 0.005452 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.343812 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 317.
+Total: 0.210713 ms (FindLiveObjects: 0.025657 ms CreateObjectMapping: 0.033675 ms MarkObjects: 0.147531 ms  DeleteObjects: 0.003207 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.309816 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 317.
+Total: 0.229315 ms (FindLiveObjects: 0.025016 ms CreateObjectMapping: 0.033675 ms MarkObjects: 0.166454 ms  DeleteObjects: 0.003527 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.336435 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 317.
+Total: 0.225787 ms (FindLiveObjects: 0.026619 ms CreateObjectMapping: 0.038486 ms MarkObjects: 0.156511 ms  DeleteObjects: 0.003527 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.353754 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 317.
+Total: 0.186017 ms (FindLiveObjects: 0.019563 ms CreateObjectMapping: 0.015715 ms MarkObjects: 0.145927 ms  DeleteObjects: 0.003848 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.289610 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 317.
+Total: 0.265877 ms (FindLiveObjects: 0.023091 ms CreateObjectMapping: 0.030147 ms MarkObjects: 0.206223 ms  DeleteObjects: 0.005772 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.335473 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 317.
+Total: 0.213279 ms (FindLiveObjects: 0.024374 ms CreateObjectMapping: 0.035279 ms MarkObjects: 0.148814 ms  DeleteObjects: 0.004169 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.464724 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 317.
+Total: 0.277744 ms (FindLiveObjects: 0.022771 ms CreateObjectMapping: 0.029827 ms MarkObjects: 0.218090 ms  DeleteObjects: 0.006093 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.465044 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 317.
+Total: 0.227711 ms (FindLiveObjects: 0.019884 ms CreateObjectMapping: 0.025016 ms MarkObjects: 0.177358 ms  DeleteObjects: 0.004810 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.370753 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 317.
+Total: 0.205581 ms (FindLiveObjects: 0.019243 ms CreateObjectMapping: 0.021488 ms MarkObjects: 0.160039 ms  DeleteObjects: 0.003848 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.320720 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 317.
+Total: 0.304043 ms (FindLiveObjects: 0.026299 ms CreateObjectMapping: 0.034317 ms MarkObjects: 0.236691 ms  DeleteObjects: 0.005772 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.299232 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 317.
+Total: 0.236371 ms (FindLiveObjects: 0.021488 ms CreateObjectMapping: 0.026940 ms MarkObjects: 0.175754 ms  DeleteObjects: 0.011866 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.346057 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 317.
+Total: 0.214882 ms (FindLiveObjects: 0.023733 ms CreateObjectMapping: 0.034317 ms MarkObjects: 0.152663 ms  DeleteObjects: 0.003527 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.430086 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 317.
+Total: 0.278706 ms (FindLiveObjects: 0.022771 ms CreateObjectMapping: 0.030789 ms MarkObjects: 0.219372 ms  DeleteObjects: 0.005452 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.301156 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 317.
+Total: 0.229956 ms (FindLiveObjects: 0.025016 ms CreateObjectMapping: 0.039769 ms MarkObjects: 0.160681 ms  DeleteObjects: 0.003848 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.283196 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 317.
+Total: 0.199488 ms (FindLiveObjects: 0.015394 ms CreateObjectMapping: 0.017318 ms MarkObjects: 0.162926 ms  DeleteObjects: 0.003207 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.443235 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 285.
+Total: 0.292817 ms (FindLiveObjects: 0.023412 ms CreateObjectMapping: 0.033675 ms MarkObjects: 0.218410 ms  DeleteObjects: 0.016677 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.246313 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 317.
+Total: 0.242144 ms (FindLiveObjects: 0.025336 ms CreateObjectMapping: 0.020205 ms MarkObjects: 0.187621 ms  DeleteObjects: 0.008338 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.450933 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 285.
+Total: 0.283837 ms (FindLiveObjects: 0.023733 ms CreateObjectMapping: 0.033354 ms MarkObjects: 0.209751 ms  DeleteObjects: 0.016356 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShowWhenTouching.OnTriggerStay2D (UnityEngine.Collider2D col) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnloadTime: 0.367545 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 275.
+Total: 0.290893 ms (FindLiveObjects: 0.021167 ms CreateObjectMapping: 0.042335 ms MarkObjects: 0.215203 ms  DeleteObjects: 0.011545 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.304684 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 275.
+Total: 0.244068 ms (FindLiveObjects: 0.019563 ms CreateObjectMapping: 0.029506 ms MarkObjects: 0.188904 ms  DeleteObjects: 0.005131 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.308212 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 275.
+Total: 0.254652 ms (FindLiveObjects: 0.022450 ms CreateObjectMapping: 0.039769 ms MarkObjects: 0.186338 ms  DeleteObjects: 0.005131 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.317834 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 275.
+Total: 0.265877 ms (FindLiveObjects: 0.021809 ms CreateObjectMapping: 0.040090 ms MarkObjects: 0.197243 ms  DeleteObjects: 0.006093 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.314626 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 275.
+Total: 0.258821 ms (FindLiveObjects: 0.022129 ms CreateObjectMapping: 0.040090 ms MarkObjects: 0.190828 ms  DeleteObjects: 0.005131 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.305646 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 275.
+Total: 0.248879 ms (FindLiveObjects: 0.020846 ms CreateObjectMapping: 0.031109 ms MarkObjects: 0.190828 ms  DeleteObjects: 0.005452 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.358886 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 275.
+Total: 0.256576 ms (FindLiveObjects: 0.030789 ms CreateObjectMapping: 0.030147 ms MarkObjects: 0.190187 ms  DeleteObjects: 0.004810 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.183131 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 275.
+Total: 0.187621 ms (FindLiveObjects: 0.027581 ms CreateObjectMapping: 0.015394 ms MarkObjects: 0.133419 ms  DeleteObjects: 0.010583 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.180886 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 275.
+Total: 0.196922 ms (FindLiveObjects: 0.019563 ms CreateObjectMapping: 0.015394 ms MarkObjects: 0.150417 ms  DeleteObjects: 0.011225 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.211354 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 275.
+Total: 0.153625 ms (FindLiveObjects: 0.010583 ms CreateObjectMapping: 0.015715 ms MarkObjects: 0.124118 ms  DeleteObjects: 0.002565 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.180245 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 275.
+Total: 0.165491 ms (FindLiveObjects: 0.010583 ms CreateObjectMapping: 0.024054 ms MarkObjects: 0.128288 ms  DeleteObjects: 0.002565 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.169019 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 275.
+Total: 0.147852 ms (FindLiveObjects: 0.017960 ms CreateObjectMapping: 0.015394 ms MarkObjects: 0.110969 ms  DeleteObjects: 0.002886 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.162926 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 275.
+Total: 0.166133 ms (FindLiveObjects: 0.014111 ms CreateObjectMapping: 0.016998 ms MarkObjects: 0.131495 ms  DeleteObjects: 0.003207 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.223221 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 275.
+Total: 0.209751 ms (FindLiveObjects: 0.024695 ms CreateObjectMapping: 0.033996 ms MarkObjects: 0.146890 ms  DeleteObjects: 0.003527 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.273254 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 275.
+Total: 0.224504 ms (FindLiveObjects: 0.020205 ms CreateObjectMapping: 0.038807 ms MarkObjects: 0.160039 ms  DeleteObjects: 0.004490 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.316551 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 275.
+Total: 0.249520 ms (FindLiveObjects: 0.021488 ms CreateObjectMapping: 0.039127 ms MarkObjects: 0.183772 ms  DeleteObjects: 0.004810 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.293459 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 275.
+Total: 0.241823 ms (FindLiveObjects: 0.029185 ms CreateObjectMapping: 0.027261 ms MarkObjects: 0.179924 ms  DeleteObjects: 0.005131 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
+  at UIManager.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Scene 'Alpha_Into_Work_office' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 127)
+
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 16e0 -> priority: 1 
+  Thread -> id: 122c -> priority: 1 

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Library inside/Library_bookshelves.unity
+- path: Assets/Library inside/Library_bookshelvesCont.unity
   isLoaded: 1
   isActive: 1
