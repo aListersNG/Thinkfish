@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Library inside/Library_bookshelvesCont.unity
+- path: Assets/Into Work Inside/Into_Work_hallway.unity
   isLoaded: 1
   isActive: 1
