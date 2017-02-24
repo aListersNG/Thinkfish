@@ -83,13 +83,13 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Basic Code Library\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\ChangeText.cs" />
-    <Compile Include="Assets\Scripts\Basic Code Library\LibraryNPC.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\Load_New_Scene.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\NPCMovement.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\Player_Movement_Script.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\Press_E_To_Enter_New_Scene.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\ShowWhenTouching.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\UIManager.cs" />
+    <Compile Include="Assets\Scripts\Basic Code Library\VignetteControl.cs" />
     <Compile Include="Assets\Scripts\Scene Bakery\Exit_Bakery.cs" />
     <Compile Include="Assets\Scripts\Scene Bakery\Start_Bakery_Job.cs" />
     <Compile Include="Assets\Scripts\Scene City Centre right\Load_City_Centre_left.cs" />
@@ -103,10 +103,15 @@
     <Compile Include="Assets\Scripts\Scene Into Work Inside\Load_IntoWork_entrance.cs" />
     <Compile Include="Assets\Scripts\Scene Into Work Inside\Load_Into_Work_groundfloor2.cs" />
     <Compile Include="Assets\Scripts\Scene Into Work outside\Into_Work_Door.cs" />
+    <Compile Include="Assets\Scripts\Scene Library Bookshelves\LibraryNPC.cs" />
     <Compile Include="Assets\Scripts\Scene Library Bookshelves\PickupGame.cs" />
     <Compile Include="Assets\Scripts\Scene Library Bookshelves\PutBookAway.cs" />
+    <Compile Include="Assets\Scripts\Scene Library Bookshelves\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\Scene Main Menu\Load_Level_Script.cs" />
     <Compile Include="Assets\Scripts\Scene Newsagents\Exit_Newsagents.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Scripts\Shaders\Vignette.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

@@ -47,19 +47,22 @@
 
 			fixed4 frag (v2f i) : SV_Target
 			{
-				float2 focus = (_FocusPointX, _FocusPointY);
-				
 				float2 nCoord = i.vertex.xy / _ScreenParams.xy;
-				nCoord = (i.vertex. xy * focus.xy) * 2 / _ScreenParams.xy;
-				fixed4 col = tex2D(_MainTex, nCoord);	
-				float2 centeredCoord = nCoord - 0.5f;
-				centeredCoord.x += focus.x/2;
+				fixed4 col = tex2D(_MainTex, nCoord);
+				
+				//Move it to the selected object
+				float2 centeredCoord = nCoord - 1.0f;
+				centeredCoord.x += 1.0f - _FocusPointX;
+				centeredCoord.y += _FocusPointY;
 
 				float dist = sqrt(dot( centeredCoord, centeredCoord));
 
 				float vig = dist * _VignetteStrength;
 
-				return fixed4(lerp(col, fixed4(0.0f,0.0f,0.0f,1.0f), vig));
+				return fixed4(lerp(col, fixed4(0.0f,0.0f,0.0f,0.5f), vig));
+
+
+				//return fixed4(lerp(editCol, col, 1.0f));
 			}
 			ENDCG
 		}

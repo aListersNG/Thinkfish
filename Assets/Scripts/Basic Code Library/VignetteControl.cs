@@ -1,19 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[ExecuteInEditMode]
 public class VignetteControl : MonoBehaviour {
     
     public Material material;
     public float vignette;
     public Transform worldPos;
 
-    private void Update()
-    {
-        if(vignette <= 5.0f)
-        {
-            vignette += Time.deltaTime;
-        }
-    }
 
     void OnRenderImage(RenderTexture src, RenderTexture dest)
     {
