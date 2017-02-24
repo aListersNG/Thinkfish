@@ -9,7 +9,6 @@ public class Player_Movement_Script : MonoBehaviour
     private float moveX;
     public float moveSpeed;
     public float EntryPosition;
-    public Transform playerTransform;
     private Rigidbody2D player;
     public Sprite Testsprite;
 
@@ -30,7 +29,6 @@ public class Player_Movement_Script : MonoBehaviour
     {
         Screen.SetResolution(1280, 720, false); // by David Law
         player = gameObject.GetComponent<Rigidbody2D>();// by Andy McGonigal
-
 
         UI = GetComponent<UIManager>();
         

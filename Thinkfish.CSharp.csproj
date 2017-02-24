@@ -83,6 +83,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Basic Code Library\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\ChangeText.cs" />
+    <Compile Include="Assets\Scripts\Basic Code Library\DontDestroy.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\Load_New_Scene.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\NPCMovement.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\Player_Movement_Script.cs" />
