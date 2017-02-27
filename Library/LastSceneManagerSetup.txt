@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Alpha_Bakery_inside.unity
+- path: Assets/Library inside/Library_entrance.unity
   isLoaded: 1
   isActive: 1
