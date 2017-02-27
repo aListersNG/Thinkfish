@@ -17,440 +17,229 @@ Platform assembly: M:\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.Networkin
 Loading M:\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: M:\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading M:\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.676 seconds
+- Completed reload, in  0.522 seconds
 Platform assembly: M:\Thinkfish\Thinkfishgame_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: M:\Thinkfish\Thinkfishgame_Data\Managed\System.dll (this message is harmless)
 desktop: 1440x900 60Hz; virtual: 1440x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.925552 ms
+UnloadTime: 1.615424 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.930000 ms
+UnloadTime: 7.570397 ms
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 439.
-Total: 0.275170 ms (FindLiveObjects: 0.024374 ms CreateObjectMapping: 0.016356 ms MarkObjects: 0.199161 ms  DeleteObjects: 0.032712 ms)
+Total: 0.353103 ms (FindLiveObjects: 0.034636 ms CreateObjectMapping: 0.034636 ms MarkObjects: 0.251117 ms  DeleteObjects: 0.027260 ms)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.387740 ms
-
-Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 340.
-Total: 0.243420 ms (FindLiveObjects: 0.019242 ms CreateObjectMapping: 0.020525 ms MarkObjects: 0.177353 ms  DeleteObjects: 0.025656 ms)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
-  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
-  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.467276 ms
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 297.
-Total: 0.279981 ms (FindLiveObjects: 0.019563 ms CreateObjectMapping: 0.026939 ms MarkObjects: 0.203331 ms  DeleteObjects: 0.020204 ms)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.318145 ms
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 329.
-Total: 0.314297 ms (FindLiveObjects: 0.025977 ms CreateObjectMapping: 0.031750 ms MarkObjects: 0.242457 ms  DeleteObjects: 0.012828 ms)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.305638 ms
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 297.
-Total: 0.207500 ms (FindLiveObjects: 0.023411 ms CreateObjectMapping: 0.029184 ms MarkObjects: 0.143037 ms  DeleteObjects: 0.010262 ms)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.220328 ms
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 292.
-Total: 0.202369 ms (FindLiveObjects: 0.024053 ms CreateObjectMapping: 0.029505 ms MarkObjects: 0.141433 ms  DeleteObjects: 0.007055 ms)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
-  at UIManager.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.260738 ms
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 329.
-Total: 0.228346 ms (FindLiveObjects: 0.023091 ms CreateObjectMapping: 0.030146 ms MarkObjects: 0.165807 ms  DeleteObjects: 0.008659 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.287357 ms
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 297.
-Total: 0.203972 ms (FindLiveObjects: 0.025977 ms CreateObjectMapping: 0.031429 ms MarkObjects: 0.134698 ms  DeleteObjects: 0.011224 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.254324 ms
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 340.
-Total: 0.270680 ms (FindLiveObjects: 0.024694 ms CreateObjectMapping: 0.030146 ms MarkObjects: 0.203331 ms  DeleteObjects: 0.011866 ms)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.307562 ms
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 447.
-Total: 0.323277 ms (FindLiveObjects: 0.030146 ms CreateObjectMapping: 0.036561 ms MarkObjects: 0.238609 ms  DeleteObjects: 0.017318 ms)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.610634 ms
+UnloadTime: 0.372025 ms
 
 Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 319.
-Total: 0.339312 ms (FindLiveObjects: 0.024694 ms CreateObjectMapping: 0.032712 ms MarkObjects: 0.246306 ms  DeleteObjects: 0.034316 ms)
+Total: 0.233157 ms (FindLiveObjects: 0.022770 ms CreateObjectMapping: 0.033033 ms MarkObjects: 0.153941 ms  DeleteObjects: 0.022770 ms)
 
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.497103 ms
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 331.
-Total: 0.283829 ms (FindLiveObjects: 0.022129 ms CreateObjectMapping: 0.030788 ms MarkObjects: 0.217763 ms  DeleteObjects: 0.012507 ms)
-
-NullReferenceException: Object reference not set to an instance of an object
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
   at UIManager.HideUI () [0x00000] in <filename unknown>:0 
   at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
   at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
   at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
   at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
   at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
   at UIManager.HideUI () [0x00000] in <filename unknown>:0 
   at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
   at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
   at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
   at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
   at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.428470 ms
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 317.
-Total: 0.279019 ms (FindLiveObjects: 0.029184 ms CreateObjectMapping: 0.036240 ms MarkObjects: 0.200444 ms  DeleteObjects: 0.012187 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.316542 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 331.
-Total: 0.230912 ms (FindLiveObjects: 0.025015 ms CreateObjectMapping: 0.039126 ms MarkObjects: 0.159072 ms  DeleteObjects: 0.007055 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.459900 ms
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 317.
-Total: 0.300506 ms (FindLiveObjects: 0.024374 ms CreateObjectMapping: 0.031109 ms MarkObjects: 0.229629 ms  DeleteObjects: 0.014111 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.304996 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 331.
-Total: 0.375874 ms (FindLiveObjects: 0.027260 ms CreateObjectMapping: 0.032391 ms MarkObjects: 0.302431 ms  DeleteObjects: 0.012187 ms)
-
-NullReferenceException: Object reference not set to an instance of an object
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
   at UIManager.HideUI () [0x00000] in <filename unknown>:0 
   at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
   at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.310769 ms
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 319.
-Total: 0.229308 ms (FindLiveObjects: 0.024694 ms CreateObjectMapping: 0.038485 ms MarkObjects: 0.156507 ms  DeleteObjects: 0.008979 ms)
-
-NullReferenceException: Object reference not set to an instance of an object
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
   at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
   at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
   at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
   at UIManager.HideUI () [0x00000] in <filename unknown>:0 
   at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
   at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.307562 ms
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 447.
-Total: 0.336105 ms (FindLiveObjects: 0.031750 ms CreateObjectMapping: 0.033354 ms MarkObjects: 0.255927 ms  DeleteObjects: 0.014432 ms)
-
-NullReferenceException: Object reference not set to an instance of an object
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
   at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
   at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
   at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.393192 ms
-
-Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 348.
-Total: 0.268435 ms (FindLiveObjects: 0.048427 ms CreateObjectMapping: 0.021166 ms MarkObjects: 0.175108 ms  DeleteObjects: 0.022449 ms)
-
-NullReferenceException: Object reference not set to an instance of an object
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
   at UIManager.HideUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
+  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
+  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
+  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
+  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
+  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
+  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
+  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
+  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
+  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
+  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
+  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
+  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
+  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
+  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
+  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
+  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Behaviour:set_enabled (bool)
+  at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
   at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
   at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
  
@@ -465,13 +254,20 @@ NullReferenceException
 (Filename:  Line: -1)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.425584 ms
+UnloadTime: 0.424301 ms
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 455.
-Total: 0.345727 ms (FindLiveObjects: 0.034957 ms CreateObjectMapping: 0.033033 ms MarkObjects: 0.261059 ms  DeleteObjects: 0.015394 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 331.
+Total: 0.286074 ms (FindLiveObjects: 0.026939 ms CreateObjectMapping: 0.041371 ms MarkObjects: 0.205576 ms  DeleteObjects: 0.011545 ms)
 
 NullReferenceException: Object reference not set to an instance of an object
   at UIManager.ShowUI () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
+  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
   at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
   at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
  
@@ -491,12 +287,17 @@ NullReferenceException: Object reference not set to an instance of an object
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at UIManager.HideUI () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.UIExperiment () [0x00000] in <filename unknown>:0 
-  at Player_Movement_Script.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.458938 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 317.
+Total: 0.296658 ms (FindLiveObjects: 0.025656 ms CreateObjectMapping: 0.041371 ms MarkObjects: 0.216801 ms  DeleteObjects: 0.012507 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.732505 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 331.
+Total: 0.417245 ms (FindLiveObjects: 0.031429 ms CreateObjectMapping: 0.035919 ms MarkObjects: 0.337388 ms  DeleteObjects: 0.010262 ms)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 2534 -> priority: 1 
+  Thread -> id: 1510 -> priority: 1 

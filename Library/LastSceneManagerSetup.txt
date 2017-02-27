@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Alpha_Home_outside.unity
+- path: Assets/Alpha_Bakery_inside.unity
   isLoaded: 1
   isActive: 1
