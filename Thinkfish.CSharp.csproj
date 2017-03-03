@@ -81,7 +81,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Dragable.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\ChangeText.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\DontDestroy.cs" />
@@ -105,6 +104,7 @@
     <Compile Include="Assets\Scripts\Scene Into Work Inside\Load_IntoWork_entrance.cs" />
     <Compile Include="Assets\Scripts\Scene Into Work Inside\Load_Into_Work_groundfloor2.cs" />
     <Compile Include="Assets\Scripts\Scene Into Work outside\Into_Work_Door.cs" />
+    <Compile Include="Assets\Scripts\Scene Library Bookshelves\Dragable.cs" />
     <Compile Include="Assets\Scripts\Scene Library Bookshelves\LibraryNPC.cs" />
     <Compile Include="Assets\Scripts\Scene Library Bookshelves\PickupGame.cs" />
     <Compile Include="Assets\Scripts\Scene Library Bookshelves\PutBookAway.cs" />

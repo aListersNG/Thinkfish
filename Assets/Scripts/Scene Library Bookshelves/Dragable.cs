@@ -9,12 +9,14 @@ public class Dragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     Vector3 startPos;
 
 	// Use this for initialization
-	void Start () {
-		
-	}
+	void Start ()
+    {
+        startPos = transform.position;
+    }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 		
 	}
 
@@ -31,5 +33,9 @@ public class Dragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     {
         ItemBeingDragged = null;
         transform.position = Input.mousePosition;
+        if (transform.position.y > Screen.height || transform.position.x > Screen.width || transform.position.y < 0 || transform.position.x < 0)
+        {
+            transform.position = startPos;
+        }
     }
 }
