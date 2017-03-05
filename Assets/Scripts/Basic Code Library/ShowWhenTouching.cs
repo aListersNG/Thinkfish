@@ -4,32 +4,24 @@ using System.Collections;
 
 public class ShowWhenTouching : MonoBehaviour
 {
-    public Player_Movement_Script player;
-    bool talkable;
-    // Use this for initialization
-    void Start()
-    {
-        //hide object
-        gameObject.GetComponent<Renderer>().enabled = false;
-        talkable = player.talkable;
-    }
+   // Use this for initialization
+   void Awake()
+   {
+       //hide object
+       gameObject.GetComponent<Renderer>().enabled = false;
+   }
 
-    void OnTriggerStay2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
-        gameObject.GetComponent<Renderer>().enabled = false;
         //show object when it collides with player
         if (col.gameObject.tag == "Player")
-            {
-                gameObject.GetComponent<Renderer>().enabled = true;
-                player.talkable = true;
-            }
-
-        //ideally start dialogue here but that's still being developed
-     }
-        //when player is no longer colliding then hide object again.
-        void OnTriggerExit2D(Collider2D col)
-            {
-                gameObject.GetComponent<Renderer>().enabled = false;
-                player.talkable = false;
-            }
+        {
+            gameObject.GetComponent<Renderer>().enabled = true;
+        }
+    }
+   //when player is no longer colliding then hide object again.
+   void OnTriggerExit2D(Collider2D col)
+       {
+           gameObject.GetComponent<Renderer>().enabled = false;
+       }
     }

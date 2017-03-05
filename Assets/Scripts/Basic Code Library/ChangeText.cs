@@ -6,6 +6,7 @@ public class ChangeText : MonoBehaviour
 {
     public Text m_Dialogue;
 	public string[] m_dialogueOption;
+    bool myInteract;
     int i = 0;
 	// Use this for initialization
 	void Start ()
@@ -16,34 +17,44 @@ public class ChangeText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(myInteract)
+        {
+            NextText();
+        }
+    }
+
+    void NextText()
+    {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-			m_Dialogue.text = m_dialogueOption [i];
-            //m_Dialogue = gameObject.GetComponent<Text>();
-            //if (i == 0)
-            //{
-            //    m_Dialogue.text = "<insert other dialogue>";
-            //}
-			//
-            //if (i == 1)
-            //{
-            //    m_Dialogue.text = "<insert other other dialogue>";
-            //}
-			//
-            //if (i == 2)
-            //{
-            //    m_Dialogue.text = "<insert reating dialogue>";
-            //}
+            m_Dialogue.text = m_dialogueOption[i];
 
+            if (i < (m_dialogueOption.Length - 1))
+            {
+                i++;
+            }
+            else
+            {
+                i = 0;
+            }
         }
-        if (Input.GetKeyUp(KeyCode.Space))
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.tag == "Player")
         {
-			if (i < 2) {
-				i++;
-			} else {
-				i = 0;
-			}
+            myInteract = true;
+            i = 0;
+            m_Dialogue.text = m_dialogueOption[i];
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if(col.tag == "Player")
+        {
+            myInteract = false;
         }
     }
 }

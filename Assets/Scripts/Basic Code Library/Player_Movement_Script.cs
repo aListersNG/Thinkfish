@@ -8,9 +8,7 @@ public class Player_Movement_Script : MonoBehaviour
     //Player Movement Variables
     private float moveX;
     public float moveSpeed;
-    public float EntryPosition;
     private Rigidbody2D player;
-    public Sprite Testsprite;
 
     //For animation use these variables
     public Sprite[] animationWalk;
@@ -38,18 +36,14 @@ public class Player_Movement_Script : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()//by Andy McGonigal
+    void Update()
     {
-        UIExperiment();
-
         if (!displayingUI)
         {
             ManageMovement();
         }
-        else
-        {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
-        }
+
+        TalkCheck();
     }
 
     void ManageMovement()
@@ -121,24 +115,25 @@ public class Player_Movement_Script : MonoBehaviour
     GetComponent<Rigidbody2D>().velocity = new Vector2(moveX * moveSpeed, 0);
 }
 
-    void UIExperiment()
-{
-        if (talkable == true)
+    void TalkCheck()
+    {
+        if(talkable)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if(Input.GetKeyDown(KeyCode.E))
             {
-                if (displayingUI)
+                if(!displayingUI)
                 {
-                    displayingUI = false;
-                    UI.HideUI();
+                    UI.ShowUI();
+                    displayingUI = true;
+                    GetComponent<Rigidbody2D>().velocity = new Vector2(0.0f, 0.0f);
                 }
                 else
                 {
-                    displayingUI = true;
-                    UI.ShowUI();
-                    //UI.SetImage(Testsprite);
+                    UI.HideUI();
+                    displayingUI = false;
                 }
             }
         }
-}
+    }
+
 }

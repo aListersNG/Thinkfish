@@ -35,7 +35,7 @@ public class NPCMovement : MonoBehaviour
         startPos = transform.position.x;
 
         //Work out top distances allowed
-        float distToStrt = 4.0f;
+        float distToStrt = 5.0f;
         minX = startPos - distToStrt;
         maxX = startPos + distToStrt;
 

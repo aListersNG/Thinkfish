@@ -4,9 +4,9 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour {
 
-    public UnityEngine.UI.Text myText;
-    public UnityEngine.UI.Image myImage;
-    public UnityEngine.UI.Image textBox;
+    public Text myText;
+    public Image myImage;
+    public Image textBox;
 
     // Use this for initialization
     void Start () {
