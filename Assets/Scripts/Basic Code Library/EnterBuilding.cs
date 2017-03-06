@@ -38,6 +38,7 @@ public class EnterBuilding : MonoBehaviour {
     {
         if(col.tag == "Player")
         {
+            col.GetComponent<Player_Movement_Script>().atDoor = true;
             canEnter = true;
             myPlayer = col.gameObject;
         }
@@ -47,6 +48,7 @@ public class EnterBuilding : MonoBehaviour {
     {
         if(col.tag == "Player")
         {
+            col.GetComponent<Player_Movement_Script>().atDoor = false;
             canEnter = false;
             myPlayer = null;
         }

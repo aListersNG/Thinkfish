@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class Player_Movement_Script : MonoBehaviour
 {
-    
     //Player Movement Variables
     private float moveX;
     public float moveSpeed;
@@ -21,6 +20,7 @@ public class Player_Movement_Script : MonoBehaviour
     private UIManager UI;
     bool displayingUI;
     public bool talkable;
+    public bool atDoor;
 
     // Use this for initialization
     void Start()
@@ -117,7 +117,7 @@ public class Player_Movement_Script : MonoBehaviour
 
     void TalkCheck()
     {
-        if(talkable)
+        if(talkable && !atDoor)
         {
             if(Input.GetKeyDown(KeyCode.E))
             {
