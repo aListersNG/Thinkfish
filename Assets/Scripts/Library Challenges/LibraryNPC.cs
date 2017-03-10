@@ -5,9 +5,14 @@ using UnityEngine.UI;
 using System;
 
 public class LibraryNPC : MonoBehaviour {
+    //For holding the Game Manager
+    public GameObject gameManager;
 
     //The different game types that can be used
-    enum GameType { CheckInBook, PrinterUsage, CheckInComputer};
+    //public enum GameType { CheckInBook, PrinterUsage, CheckInComputer };
+
+    //For holding all needed giveable items
+    public GameObject myBook, myCash, libraryCard;
 
     //Used for deciding the movement
     bool walkingIn, walkingOut, idle;
@@ -16,20 +21,22 @@ public class LibraryNPC : MonoBehaviour {
     public String[] bookCheckIn;
     public String[] printerUsage;
     public String[] computerCheckIn;
-	public Text myText;     //<-- To be implemented for use
 
-    //If the npc's "game" is being played
-    public bool gamePlaying;
+	public Text myText;
+    String[] textToDisplay;
+    int textCounter = 0;
+    float talkingTimer = 0.0f;
+    bool finishedTalking;
 
-    //For the body movement
+    //For the body movement and animation
     Rigidbody2D mybody;
+    public Sprite idleSprite;
+    public Sprite[] walkAnimation;
+    int animationCounter = 0;
+    float animationSpeed = 0.0f;
 
     //To hold the game type
-    GameType questType;
-
-    //Current placeholder to make the character stop
-    //Mostly for testing that the walkout worked too
-    float tempGameTimer = 0.0f;
+    GamePlayer.GameType questType;
 
 	// Use this for initialization
 	void Start () {
@@ -38,25 +45,35 @@ public class LibraryNPC : MonoBehaviour {
         mybody = GetComponent<Rigidbody2D>();
         RandomGameType();
         SetText();
+        
+        //Set giveable objects to false
+        myBook.SetActive(false);
+        myCash.SetActive(false);
+        libraryCard.SetActive(false);
         }
 	
 	// Update is called once per frame
 	void Update () {
-
-        //Run the appropriate section
-		if(walkingIn)
+        if (!gameManager.GetComponent<GamePlayer>().gamePaused)
         {
-            WalkingIn();
+            //Run the appropriate section
+            if (walkingIn)
+            {
+                WalkingIn();
+            }
+            else if (walkingOut)
+            {
+                WalkingOut();
+            }
+            else if (idle)
+            {
+                GamePlay();
+            }
         }
-        else if(walkingOut)
+        else
         {
-            WalkingOut();
+            mybody.velocity = new Vector2(0.0f, 0.0f);
         }
-        else if(idle)
-        {
-            GamePlay();
-        }
-
 	}
 
     void WalkingIn()
@@ -68,14 +85,13 @@ public class LibraryNPC : MonoBehaviour {
             walkingIn = false;
             idle = true;
             mybody.velocity = new Vector2(0.0f, 0.0f);
-            gamePlaying = true;
-            GetComponent<ChangeText>().enabled = true;
-            GetComponent<ChangeText>().m_Dialogue.text = GetComponent<ChangeText>().m_dialogueOption[0];
+            myText.text = textToDisplay[0];
         }
         else
         {
             //npc moves into center
             mybody.velocity = new Vector2(-2.0f, 0.0f);
+            WalkAnimation();
         }
     }
 
@@ -91,6 +107,7 @@ public class LibraryNPC : MonoBehaviour {
         {
             //Move it off the screen
             mybody.velocity = new Vector2(-2.0f, 0.0f);
+            WalkAnimation();
         }
     }
 
@@ -99,7 +116,8 @@ public class LibraryNPC : MonoBehaviour {
         //Set to new starting variables
         walkingOut = false;
         walkingIn = true;
-        transform.position = new Vector3(10.0f, 0.0f, transform.position.z);
+        finishedTalking = false;
+        transform.position = new Vector3(10.0f, transform.position.y, transform.position.z);
         RandomGameType();
         SetText();
     }
@@ -107,64 +125,144 @@ public class LibraryNPC : MonoBehaviour {
     void GamePlay()
     {
         //If the game is no longer being played, allow the character to leave
-        if(!gamePlaying)
+        if (gameManager.GetComponent<GamePlayer>().gameOver)
         {
             walkingOut = true;
             idle = false;
-            GetComponent<ChangeText>().m_Dialogue.text = "";
-            GetComponent<ChangeText>().enabled = false;
+            myText.text = "";
         }
-        else
+        else if(!finishedTalking)
         {
-            //Display any appropriate text
-            //Run the right game
-            if(tempGameTimer >= 2.0f)
-            {
-                tempGameTimer = 0.0f;
-                gamePlaying = false;
-            }
-            else
-            {
-                tempGameTimer += Time.deltaTime;
-            }
+           PlayThroughText();
         }
     }
 
     void RandomGameType()
     {
         //Choose a random game type to begin
-        questType = (GameType)UnityEngine.Random.Range(0, Enum.GetNames(typeof(GameType)).Length);
+        questType = (GamePlayer.GameType)UnityEngine.Random.Range(0, Enum.GetNames(typeof(GamePlayer.GameType)).Length);
+
+        gameManager.GetComponent<GamePlayer>().SetQuestType(questType);
     }
 
     void SetText()
-    {
-        //Currently a placeholder using the ChangeText script
-        ChangeText text = GetComponent<ChangeText>();
-        
+    {        
         //Dependant on what game type it is, display appropriate text
         switch(questType)
         {
-            case GameType.CheckInBook:
-                for (int i = 0; i <= 4; i++)
-                {
-                    text.m_dialogueOption[i] = bookCheckIn[i];
-                }
-
+            case GamePlayer.GameType.CheckInBook:
+                textToDisplay = bookCheckIn;
                 break;
-            case GameType.CheckInComputer:
-                for (int i = 0; i <= 4; i++)
-                {
-                    text.m_dialogueOption[i] = computerCheckIn[i];
-                }
 
+            case GamePlayer.GameType.CheckInBookLate:
+                textToDisplay = bookCheckIn;
                 break;
-            case GameType.PrinterUsage:
-                for (int i = 0; i <= 4; i++)
-                {
-                    text.m_dialogueOption[i] = printerUsage[i];
-                }
 
-                break; 
+            case GamePlayer.GameType.CheckInComputer:
+                textToDisplay = computerCheckIn;
+                break;
+            case GamePlayer.GameType.PrinterUsage:
+                textToDisplay = printerUsage;
+                break;
+
+            default:
+                break;
         }
+    }
+
+    void PlayThroughText()
+    {
+        //If the timer is over 2 seconds
+        if(talkingTimer > 2.0f)
+        {
+            //Reset timer
+            talkingTimer = 0.0f;
+            if(textCounter < textToDisplay.Length - 1)
+            {
+                //Dispaly next text
+                textCounter++;
+                myText.text = textToDisplay[textCounter];
+            }
+            else
+            {
+                //Reset everything and set the game to begin
+                finishedTalking = true;
+                textCounter = 0;
+                myText.text = "";
+                gameManager.GetComponent<GamePlayer>().gamePlaying = true;
+                GiveItems();
+            }
+        }
+        else
+        {
+            //Increase the timer
+            talkingTimer += Time.deltaTime;
+        }
+    }
+
+    void GiveItems()
+    {
+        //All require library card
+        GiveLibraryCard();
+
+        //Dependant on what game type it is, give the appropriate items
+        switch (questType)
+        {
+            case GamePlayer.GameType.CheckInBook:
+                GiveBook();
+                break;
+
+            case GamePlayer.GameType.PrinterUsage:
+                GiveCash();
+                break;
+
+            default:
+                break;
+        }
+    }
+
+    void GiveLibraryCard()
+    {
+        libraryCard.SetActive(true);
+    }
+
+    void GiveBook()
+    {
+        myBook.SetActive(true);
+    }
+
+    void GiveCash()
+    {
+        myCash.SetActive(true);
+    }
+
+    void WalkAnimation()
+    {
+        if (animationSpeed <= 0.0f)
+        {
+            //Move to the next sprite
+            if (animationCounter < 3)
+            {
+                animationCounter++;
+            }
+            else
+            {
+                animationCounter = 0;
+            }
+
+            //Set the new sprite and time to change back to default
+            GetComponent<SpriteRenderer>().sprite = walkAnimation[animationCounter];
+            animationSpeed = 0.2f;
+        }
+        else
+        {
+            animationSpeed -= Time.deltaTime;
+        }
+    }
+
+    void IdleAnimation()
+    {
+        animationCounter = 0;
+        GetComponent<SpriteRenderer>().sprite = idleSprite;
     }
 }

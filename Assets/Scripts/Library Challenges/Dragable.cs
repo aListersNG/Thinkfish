@@ -13,12 +13,6 @@ public class Dragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     {
         startPos = transform.position;
     }
-	
-	// Update is called once per frame
-	void Update ()
-    {
-		
-	}
 
     public void OnBeginDrag(PointerEventData eventData)
     {

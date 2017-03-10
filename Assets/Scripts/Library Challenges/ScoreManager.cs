@@ -5,7 +5,7 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour {
 
     int score, failures;
-    bool gameOver;
+    public bool gameOver;
 
 	// Use this for initialization
 	void Start () {
