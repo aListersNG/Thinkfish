@@ -2,6 +2,8 @@
 using UnityEngine.UI;
 using System.Collections;
 
+//Random update to demonstrate git bash
+
 public class ChangeText : MonoBehaviour
 {
     public Text m_Dialogue;
