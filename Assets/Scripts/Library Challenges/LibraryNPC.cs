@@ -38,6 +38,9 @@ public class LibraryNPC : MonoBehaviour {
     //To hold the game type
     GamePlayer.GameType questType;
 
+    //To hold start pos of each item
+    Vector2 libCardStartPos, bookStartPos, cashStartPos;
+
 	// Use this for initialization
 	void Start () {
         //Set all the default variables
@@ -45,7 +48,11 @@ public class LibraryNPC : MonoBehaviour {
         mybody = GetComponent<Rigidbody2D>();
         RandomGameType();
         SetText();
-        
+
+        libCardStartPos = libraryCard.transform.position;
+        bookStartPos = myBook.transform.position;
+        cashStartPos = myCash.transform.position;
+
         //Set giveable objects to false
         myBook.SetActive(false);
         myCash.SetActive(false);
@@ -113,13 +120,17 @@ public class LibraryNPC : MonoBehaviour {
 
     void ResetNPC()
     {
-        //Set to new starting variables
-        walkingOut = false;
-        walkingIn = true;
-        finishedTalking = false;
-        transform.position = new Vector3(10.0f, transform.position.y, transform.position.z);
-        RandomGameType();
-        SetText();
+        if (!gameManager.GetComponent<GamePlayer>().gameComplete)
+        {
+            //Set to new starting variables
+            walkingOut = false;
+            walkingIn = true;
+            finishedTalking = false;
+            transform.position = new Vector3(10.0f, transform.position.y, transform.position.z);
+            RandomGameType();
+            SetText();
+            gameManager.GetComponent<GamePlayer>().gameOver = false;
+        }
     }
 
     void GamePlay()
@@ -130,6 +141,7 @@ public class LibraryNPC : MonoBehaviour {
             walkingOut = true;
             idle = false;
             myText.text = "";
+            RemoveItems();
         }
         else if(!finishedTalking)
         {
@@ -221,6 +233,32 @@ public class LibraryNPC : MonoBehaviour {
         }
     }
 
+    void RemoveItems()
+    {
+        //All required library card
+        ResetLibraryCard();
+
+        //Dependant on what game type it is,it will have given the appropriate items
+        switch (questType)
+        {
+            case GamePlayer.GameType.CheckInBook:
+                ResetBook();
+                break;
+
+            case GamePlayer.GameType.CheckInBookLate:
+                ResetBook();
+                ResetCash();
+                break;
+
+            case GamePlayer.GameType.PrinterUsage:
+                ResetCash();
+                break;
+
+            default:
+                break;
+        }
+    }
+
     void GiveLibraryCard()
     {
         libraryCard.SetActive(true);
@@ -234,6 +272,24 @@ public class LibraryNPC : MonoBehaviour {
     void GiveCash()
     {
         myCash.SetActive(true);
+    }
+
+    void ResetLibraryCard()
+    {
+        libraryCard.transform.position = libCardStartPos;
+        libraryCard.SetActive(false);
+    }
+
+    void ResetBook()
+    {
+        myBook.transform.position = bookStartPos;
+        myBook.SetActive(false);
+    } 
+
+    void ResetCash()
+    {
+        myCash.transform.position = cashStartPos;
+        myCash.SetActive(false);
     }
 
     void WalkAnimation()

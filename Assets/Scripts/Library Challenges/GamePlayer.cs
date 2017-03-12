@@ -80,6 +80,11 @@ public class GamePlayer : MonoBehaviour {
         distractionTimer = Random.Range(16.0f, 40.0f);
     }
 
+    public void BookCheck(bool Late)
+    {
+
+    }
+
     public void ItemDropped(string objectTag, string sectionTag)
     {
         if(objectTag == "Book")
@@ -99,6 +104,7 @@ public class GamePlayer : MonoBehaviour {
             if (sectionTag == "CashDrawer")
             {
                 currentList.Add(Action.CashTaken);
+                CheckIfRight();
             }
             else
             {
@@ -110,6 +116,7 @@ public class GamePlayer : MonoBehaviour {
             if (sectionTag == "Computer")
             {
                 currentList.Add(Action.CardChecked);
+                CheckIfRight();
             }
             else
             {
