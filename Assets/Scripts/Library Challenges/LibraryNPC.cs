@@ -288,6 +288,8 @@ public class LibraryNPC : MonoBehaviour {
     void ResetBook()
     {
         myBook.transform.position = bookStartPos;
+        myBook.GetComponent<DragNonUI>().ifActive = false;
+        myBook.GetComponent<BookOpen>().active = false;
         myBook.SetActive(false);
     } 
 

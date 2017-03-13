@@ -20,7 +20,7 @@ public class GamePlayer : MonoBehaviour {
     public enum GameType { CheckInBook, CheckInBookLate, PrinterUsage, CheckInComputer };
 
     //The types of actions that can be done
-    enum Action { CardChecked, BookDropped, CashTaken, BookStamped };
+    enum Action { CardChecked, BookDropped, CashTaken, BookStampedLate, BookStampedEarly };
 
     GameType questType;
     List<Action> currentList, bookCheckIn, bookCheckInLate, printerCheck, compCheck;
@@ -80,9 +80,18 @@ public class GamePlayer : MonoBehaviour {
         distractionTimer = Random.Range(16.0f, 40.0f);
     }
 
-    public void BookCheck(bool Late)
+    public void BookCheck(bool late)
     {
+        if(late)
+        {
+            currentList.Add(Action.BookStampedLate);
+        }
+        else
+        {
+            currentList.Add(Action.BookStampedEarly);
+        }
 
+        CheckIfRight();
     }
 
     public void ItemDropped(string objectTag, string sectionTag)
@@ -91,7 +100,7 @@ public class GamePlayer : MonoBehaviour {
         {
             if(sectionTag == "BookSlot")
             {
-                //currentList.Add();
+                currentList.Add(Action.BookDropped);
                 CheckIfRight();
             }
             else
@@ -150,10 +159,10 @@ public class GamePlayer : MonoBehaviour {
     void SetLists()
     {
         //Checking in a book
-        bookCheckIn = new List<Action> { Action.CardChecked, Action.BookStamped, Action.BookDropped };
+        bookCheckIn = new List<Action> { Action.CardChecked, Action.BookStampedEarly, Action.BookDropped };
 
         //Checking in a late book
-        bookCheckInLate = new List<Action> { Action.CardChecked, Action.BookStamped, Action.CashTaken, Action.BookDropped };
+        bookCheckInLate = new List<Action> { Action.CardChecked, Action.BookStampedLate, Action.CashTaken, Action.BookDropped };
 
         //Checking in for computer usage
         compCheck = new List<Action> { Action.CardChecked };
