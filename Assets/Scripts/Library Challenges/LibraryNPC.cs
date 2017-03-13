@@ -224,6 +224,11 @@ public class LibraryNPC : MonoBehaviour {
                 GiveBook();
                 break;
 
+            case GamePlayer.GameType.CheckInBookLate:
+                GiveBook();
+                GiveCash();
+                break;
+
             case GamePlayer.GameType.PrinterUsage:
                 GiveCash();
                 break;

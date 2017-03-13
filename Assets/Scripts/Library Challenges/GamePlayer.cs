@@ -68,7 +68,7 @@ public class GamePlayer : MonoBehaviour {
                 }
             }
         }
-        else
+        else if(!gameComplete)
         {
             distractionTimer -= Time.deltaTime;
         }
@@ -174,6 +174,10 @@ public class GamePlayer : MonoBehaviour {
                         TaskComplete();
                     }
                 }
+                else
+                {
+                    TaskFailed();
+                }
                 break;
 
             case GameType.CheckInComputer:
@@ -183,6 +187,10 @@ public class GamePlayer : MonoBehaviour {
                     {
                         TaskComplete();
                     }
+                }
+                else
+                {
+                    TaskFailed();
                 }
                 break;
 
@@ -194,6 +202,10 @@ public class GamePlayer : MonoBehaviour {
                         TaskComplete();
                     }
                 }
+                else
+                {
+                    TaskFailed();
+                }
                 break;
 
             case GameType.CheckInBookLate:
@@ -203,6 +215,10 @@ public class GamePlayer : MonoBehaviour {
                     {
                         TaskComplete();
                     }
+                }
+                else
+                {
+                    TaskFailed();
                 }
                 break;
 
