@@ -147,6 +147,13 @@ public class LibraryNPC : MonoBehaviour {
         {
            PlayThroughText();
         }
+        else if(questType == GamePlayer.GameType.CheckInBookLate)
+        {
+            if(gameManager.GetComponent<GamePlayer>().StampedLate())
+            {
+                GiveCash();
+            }
+        }
     }
 
     void RandomGameType()
@@ -226,7 +233,6 @@ public class LibraryNPC : MonoBehaviour {
 
             case GamePlayer.GameType.CheckInBookLate:
                 GiveBook();
-                GiveCash();
                 break;
 
             case GamePlayer.GameType.PrinterUsage:

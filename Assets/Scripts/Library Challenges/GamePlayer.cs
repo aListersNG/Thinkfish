@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GamePlayer : MonoBehaviour {
    
@@ -12,6 +13,14 @@ public class GamePlayer : MonoBehaviour {
     public VignetteControl cameraControl;
     bool setDark, clickingCounts;
     public Clicker clicks;
+
+    //For game dates
+    public Text textCurrentDate, textDueDate;
+    public int[] currentDate;
+    public int[] dueDate;
+
+    //For checking when distractions should be done
+    public BookOpen myBook;
 
     //For controlling score
     ScoreManager myScore;
@@ -30,6 +39,9 @@ public class GamePlayer : MonoBehaviour {
         myScore = GetComponent<ScoreManager>();
         SetDistractionTime();
         SetLists();
+        textCurrentDate.text = currentDate[0] + "/" + currentDate[1] + "/" + currentDate[2];
+        textCurrentDate.enabled = false;
+        textDueDate.enabled = false;
     }
 
     void Update()
@@ -68,7 +80,7 @@ public class GamePlayer : MonoBehaviour {
                 }
             }
         }
-        else if(!gameComplete)
+        else if(!gameComplete && !myBook.active)
         {
             distractionTimer -= Time.deltaTime;
         }
@@ -92,6 +104,23 @@ public class GamePlayer : MonoBehaviour {
         }
 
         CheckIfRight();
+    }
+
+    public bool StampedLate()
+    {
+        if (currentList.Count > 1)
+        {
+            if (currentList[currentList.Count - 1] == Action.BookStampedLate)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        return false;
     }
 
     public void ItemDropped(string objectTag, string sectionTag)
@@ -138,6 +167,51 @@ public class GamePlayer : MonoBehaviour {
     {
         currentList = new List<Action> { };
         questType = gameType;
+
+        int day = 0, month = 0;
+
+        if (questType == GameType.CheckInBook)
+        {
+            if (currentDate[0] >= 21)
+            {
+                month = currentDate[1] + 1;
+                day = Random.Range(1, 28);
+            }
+            else
+            {
+                month = currentDate[1];
+                day = Random.Range(21, 29);
+            }
+        }
+        else if(questType == GameType.CheckInBookLate)
+        {
+            if (currentDate[0] >= 21)
+            {
+                month = currentDate[1];
+                day = Random.Range(1, 20);
+            }
+            else
+            {
+                month = currentDate[1] - 1;
+                day = Random.Range(21, 29);
+            }
+        }
+
+        dueDate = new int[3] { day, month, currentDate[2] };
+
+        textDueDate.text = dueDate[0] + "/" + dueDate[1] + "/" + dueDate[2];
+    }
+
+    public void ShowBookDates()
+    {
+        textCurrentDate.enabled = true;
+        textDueDate.enabled = true;
+    }
+
+    public void HideBookDates()
+    {
+        textCurrentDate.enabled = false;
+        textDueDate.enabled = false;
     }
 
     void TaskComplete()

@@ -8,7 +8,7 @@ public class BookOpen : MonoBehaviour {
 
     public Camera deskCamera, bookCamera;
 
-    public Stamp myStamp;
+    public GamePlayer myPlayer;
 
     // Use this for initialization
 	void Start () {
@@ -24,13 +24,14 @@ public class BookOpen : MonoBehaviour {
 
     void OnMouseDown()
     {
-        if (!active)
+        if (!active && !myPlayer.gamePaused)
         {
             active = true;
 
             //Switch the cameras
             bookCamera.enabled = true;
             deskCamera.enabled = false;
+            myPlayer.ShowBookDates();
         }
     }
 

@@ -104,6 +104,7 @@
     <Compile Include="Assets\Scripts\Basic Code Library\TalkingNPC.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\UIManager.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\VignetteControl.cs" />
+    <Compile Include="Assets\Scripts\Library Challenges\BackToDesk.cs" />
     <Compile Include="Assets\Scripts\Library Challenges\BookOpen.cs" />
     <Compile Include="Assets\Scripts\Library Challenges\Clicker.cs" />
     <Compile Include="Assets\Scripts\Library Challenges\DragNonUI.cs" />
@@ -113,6 +114,7 @@
     <Compile Include="Assets\Scripts\Library Challenges\PickupGame.cs" />
     <Compile Include="Assets\Scripts\Library Challenges\PutBookAway.cs" />
     <Compile Include="Assets\Scripts\Library Challenges\ScoreManager.cs" />
+    <Compile Include="Assets\Scripts\Library Challenges\Stamp.cs" />
     <Compile Include="Assets\Scripts\Scene Main Menu\Load_Level_Script.cs" />
   </ItemGroup>
   <ItemGroup>

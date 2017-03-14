@@ -5,6 +5,7 @@ using UnityEngine;
 public class BackToDesk : MonoBehaviour {
 
     public BookOpen myBook;
+    public GamePlayer myPlayer;
 
 	void OnMouseDown()
     {
@@ -13,6 +14,7 @@ public class BackToDesk : MonoBehaviour {
 
     void ResetBook()
     {
+        myPlayer.HideBookDates();
         myBook.ResetCamera();
         myBook.active = false;
         myBook.gameObject.GetComponent<DragNonUI>().ifActive = false;
