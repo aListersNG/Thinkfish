@@ -39,7 +39,6 @@ public class PlayerMovement : MonoBehaviour
                 if (directionFacing != 2)
                 {
                     directionFacing = 2;
-                    this.transform.rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
                 }
             }
             //If the player chooses to move left
@@ -49,7 +48,6 @@ public class PlayerMovement : MonoBehaviour
                 if (directionFacing != 4)
                 {
                     directionFacing = 4;
-                    this.transform.rotation = new Quaternion(0.0f, 180.0f, 0.0f, 0.0f);
                 }
             }
             //if the player moves up
@@ -59,7 +57,6 @@ public class PlayerMovement : MonoBehaviour
                 if (directionFacing != 1)
                 {
                     directionFacing = 1;
-                    this.transform.rotation = new Quaternion(0.0f, 0.0f, 45.0f, 0.0f);
                 }
             }
             //if the player moves down
@@ -69,10 +66,25 @@ public class PlayerMovement : MonoBehaviour
                 if (directionFacing != 3)
                 {
                     directionFacing = 3;
-                    this.transform.rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
                 }
             }
         }
+        switch (directionFacing)
+        {
+            case 1:
+                //this.transform.Rotate(Vector3.right(), 90, 1);
+                break;
+            case 2:
+                this.transform.rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
+                break;
+            case 3:
+                //this.transform.Rotate(Vector3.right(), 270, 1);
+                break;
+            case 4:
+                this.transform.rotation = new Quaternion(0.0f, 180.0f, 0.0f, 0.0f);
+                break;
+        }
+        
         GetComponent<Rigidbody2D>().velocity = new Vector2(moveX * moveSpeed, moveY * moveSpeed);
     }
 }
