@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Library_Challenge_1.unity
+- path: Assets/Bookshelf_Challenge.unity
   isLoaded: 1
   isActive: 1

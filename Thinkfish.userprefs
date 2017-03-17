@@ -1,9 +1,11 @@
 ﻿<Properties StartupItem="Thinkfish.CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Bookshelves challenge\PlayerMovement.cs">
     <Files>
       <File FileName="Assets\Scripts\Basic Code Library\ChangeText.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Basic Code Library\LibraryNPC.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Library Challenges\GamePlayer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Library Challenges\ScoreManager.cs" Line="40" Column="6" />
+      <File FileName="Assets\Scripts\Bookshelves challenge\PlayerMovement.cs" Line="17" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

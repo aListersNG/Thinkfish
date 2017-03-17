@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class GamePlayer : MonoBehaviour {
    
@@ -14,14 +13,6 @@ public class GamePlayer : MonoBehaviour {
     bool setDark, clickingCounts;
     public Clicker clicks;
 
-    //For game dates
-    public Text textCurrentDate, textDueDate;
-    public int[] currentDate;
-    public int[] dueDate;
-
-    //For checking when distractions should be done
-    public BookOpen myBook;
-
     //For controlling score
     ScoreManager myScore;
 
@@ -29,7 +20,7 @@ public class GamePlayer : MonoBehaviour {
     public enum GameType { CheckInBook, CheckInBookLate, PrinterUsage, CheckInComputer };
 
     //The types of actions that can be done
-    enum Action { CardChecked, BookDropped, CashTaken, BookStampedLate, BookStampedEarly };
+    enum Action { CardChecked, BookDropped, CashTaken, BookStamped };
 
     GameType questType;
     List<Action> currentList, bookCheckIn, bookCheckInLate, printerCheck, compCheck;
@@ -39,9 +30,6 @@ public class GamePlayer : MonoBehaviour {
         myScore = GetComponent<ScoreManager>();
         SetDistractionTime();
         SetLists();
-        textCurrentDate.text = currentDate[0] + "/" + currentDate[1] + "/" + currentDate[2];
-        textCurrentDate.enabled = false;
-        textDueDate.enabled = false;
     }
 
     void Update()
@@ -80,7 +68,7 @@ public class GamePlayer : MonoBehaviour {
                 }
             }
         }
-        else if(!gameComplete && !myBook.active)
+        else if(!gameComplete)
         {
             distractionTimer -= Time.deltaTime;
         }
@@ -92,35 +80,9 @@ public class GamePlayer : MonoBehaviour {
         distractionTimer = Random.Range(16.0f, 40.0f);
     }
 
-    public void BookCheck(bool late)
+    public void BookCheck(bool Late)
     {
-        if(late)
-        {
-            currentList.Add(Action.BookStampedLate);
-        }
-        else
-        {
-            currentList.Add(Action.BookStampedEarly);
-        }
 
-        CheckIfRight();
-    }
-
-    public bool StampedLate()
-    {
-        if (currentList.Count > 1)
-        {
-            if (currentList[currentList.Count - 1] == Action.BookStampedLate)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        return false;
     }
 
     public void ItemDropped(string objectTag, string sectionTag)
@@ -129,7 +91,7 @@ public class GamePlayer : MonoBehaviour {
         {
             if(sectionTag == "BookSlot")
             {
-                currentList.Add(Action.BookDropped);
+                //currentList.Add();
                 CheckIfRight();
             }
             else
@@ -167,51 +129,6 @@ public class GamePlayer : MonoBehaviour {
     {
         currentList = new List<Action> { };
         questType = gameType;
-
-        int day = 0, month = 0;
-
-        if (questType == GameType.CheckInBook)
-        {
-            if (currentDate[0] >= 21)
-            {
-                month = currentDate[1] + 1;
-                day = Random.Range(1, 28);
-            }
-            else
-            {
-                month = currentDate[1];
-                day = Random.Range(21, 29);
-            }
-        }
-        else if(questType == GameType.CheckInBookLate)
-        {
-            if (currentDate[0] >= 21)
-            {
-                month = currentDate[1];
-                day = Random.Range(1, 20);
-            }
-            else
-            {
-                month = currentDate[1] - 1;
-                day = Random.Range(21, 29);
-            }
-        }
-
-        dueDate = new int[3] { day, month, currentDate[2] };
-
-        textDueDate.text = dueDate[0] + "/" + dueDate[1] + "/" + dueDate[2];
-    }
-
-    public void ShowBookDates()
-    {
-        textCurrentDate.enabled = true;
-        textDueDate.enabled = true;
-    }
-
-    public void HideBookDates()
-    {
-        textCurrentDate.enabled = false;
-        textDueDate.enabled = false;
     }
 
     void TaskComplete()
@@ -233,10 +150,10 @@ public class GamePlayer : MonoBehaviour {
     void SetLists()
     {
         //Checking in a book
-        bookCheckIn = new List<Action> { Action.CardChecked, Action.BookStampedEarly, Action.BookDropped };
+        bookCheckIn = new List<Action> { Action.CardChecked, Action.BookStamped, Action.BookDropped };
 
         //Checking in a late book
-        bookCheckInLate = new List<Action> { Action.CardChecked, Action.BookStampedLate, Action.CashTaken, Action.BookDropped };
+        bookCheckInLate = new List<Action> { Action.CardChecked, Action.BookStamped, Action.CashTaken, Action.BookDropped };
 
         //Checking in for computer usage
         compCheck = new List<Action> { Action.CardChecked };

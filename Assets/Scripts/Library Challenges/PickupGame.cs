@@ -15,7 +15,7 @@ public class PickupGame : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-        
+        booksCreated = false;
     }
 	
 	// Update is called once per frame
@@ -23,7 +23,7 @@ public class PickupGame : MonoBehaviour
     {
         if(gameRunning)
         {
-            if(!booksCreated)
+            if(booksCreated == false)
             {
                 CreateBooks();
             }
@@ -41,7 +41,7 @@ public class PickupGame : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            Instantiate(prefab, new Vector3(UnityEngine.Random.Range(0f, 5f), -2.5f, 0), Quaternion.identity);
+            Instantiate(prefab, new Vector3(UnityEngine.Random.Range(24f, 32f), -39.5f, 0), Quaternion.identity);
         }
         howManyBooks = 5;
         booksCreated = true;

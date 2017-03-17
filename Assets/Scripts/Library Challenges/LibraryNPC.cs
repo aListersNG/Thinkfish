@@ -147,13 +147,6 @@ public class LibraryNPC : MonoBehaviour {
         {
            PlayThroughText();
         }
-        else if(questType == GamePlayer.GameType.CheckInBookLate)
-        {
-            if(gameManager.GetComponent<GamePlayer>().StampedLate())
-            {
-                GiveCash();
-            }
-        }
     }
 
     void RandomGameType()
@@ -233,6 +226,7 @@ public class LibraryNPC : MonoBehaviour {
 
             case GamePlayer.GameType.CheckInBookLate:
                 GiveBook();
+                GiveCash();
                 break;
 
             case GamePlayer.GameType.PrinterUsage:
@@ -294,8 +288,6 @@ public class LibraryNPC : MonoBehaviour {
     void ResetBook()
     {
         myBook.transform.position = bookStartPos;
-        myBook.GetComponent<DragNonUI>().ifActive = false;
-        myBook.GetComponent<BookOpen>().active = false;
         myBook.SetActive(false);
     } 
 
