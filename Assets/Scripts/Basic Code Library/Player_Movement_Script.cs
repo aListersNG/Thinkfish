@@ -21,6 +21,7 @@ public class Player_Movement_Script : MonoBehaviour
     bool displayingUI;
     public bool talkable;
     public bool atDoor;
+    public Sprite mySpeechIcon;
 
     // Use this for initialization
     void Start()
@@ -29,7 +30,7 @@ public class Player_Movement_Script : MonoBehaviour
         player = gameObject.GetComponent<Rigidbody2D>();// by Andy McGonigal
 
         UI = GetComponent<UIManager>();
-        
+
         //Set animation variables
         counter = 0;
         timeToChange = 0.2f;
@@ -47,81 +48,81 @@ public class Player_Movement_Script : MonoBehaviour
     }
 
     void ManageMovement()
-{
-    //If the player is Idle -- By James
-    if (!Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
     {
-        //Play the idle animation and stop the player moving
-        moveX = 0;
-        timeToChange = 0.2f;
-        counter = 0;
-        this.GetComponent<SpriteRenderer>().sprite = animationIdle;
-    }
-    else
-    {
-        //If the player chooses to move right
-        if (Input.GetKey(KeyCode.D))
+        //If the player is Idle -- By James
+        if (!Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
         {
-            moveX = 1;
-            //Make sure the player faces the right way
-            //Reset counter as appropriate
-            if (facingLeft == true)
-            {
-                facingLeft = false;
-                counter = 0;
-                timeToChange = 0.3f;
-                this.transform.rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
-            }
-        }
-        //If the player chooses to move left
-        else if (Input.GetKey(KeyCode.A))
-        {
-            moveX = -1;
-            if (facingLeft == false)
-            {
-                facingLeft = true;
-                counter = 0;
-                timeToChange = 0.3f;
-                this.transform.rotation = new Quaternion(0.0f, 180.0f, 0.0f, 0.0f);
-            }
-        }
-
-        //If time for the animation is set to change
-        if (timeToChange <= 0.0f)
-        {
-            if (counter < 3)
-            {
-                //Up the counter
-                counter++;
-            }
-            else
-            {
-                //Reset the counter position
-                counter = 0;
-            }
-
-            //Change the sprite displayed
-            //Reset animation timer
+            //Play the idle animation and stop the player moving
+            moveX = 0;
             timeToChange = 0.2f;
-            this.GetComponent<SpriteRenderer>().sprite = animationWalk[counter];
+            counter = 0;
+            this.GetComponent<SpriteRenderer>().sprite = animationIdle;
         }
         else
         {
-            //Reduce the time
-            timeToChange -= Time.deltaTime;
-        }
-    }
+            //If the player chooses to move right
+            if (Input.GetKey(KeyCode.D))
+            {
+                moveX = 1;
+                //Make sure the player faces the right way
+                //Reset counter as appropriate
+                if (facingLeft == true)
+                {
+                    facingLeft = false;
+                    counter = 0;
+                    timeToChange = 0.3f;
+                    this.transform.rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
+                }
+            }
+            //If the player chooses to move left
+            else if (Input.GetKey(KeyCode.A))
+            {
+                moveX = -1;
+                if (facingLeft == false)
+                {
+                    facingLeft = true;
+                    counter = 0;
+                    timeToChange = 0.3f;
+                    this.transform.rotation = new Quaternion(0.0f, 180.0f, 0.0f, 0.0f);
+                }
+            }
 
-    GetComponent<Rigidbody2D>().velocity = new Vector2(moveX * moveSpeed, 0);
-}
+            //If time for the animation is set to change
+            if (timeToChange <= 0.0f)
+            {
+                if (counter < 3)
+                {
+                    //Up the counter
+                    counter++;
+                }
+                else
+                {
+                    //Reset the counter position
+                    counter = 0;
+                }
+
+                //Change the sprite displayed
+                //Reset animation timer
+                timeToChange = 0.2f;
+                this.GetComponent<SpriteRenderer>().sprite = animationWalk[counter];
+            }
+            else
+            {
+                //Reduce the time
+                timeToChange -= Time.deltaTime;
+            }
+        }
+
+        GetComponent<Rigidbody2D>().velocity = new Vector2(moveX * moveSpeed, 0);
+    }
 
     void TalkCheck()
     {
-        if(talkable && !atDoor)
+        if (talkable && !atDoor)
         {
-            if(Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                if(!displayingUI)
+                if (!displayingUI)
                 {
                     UI.ShowUI();
                     displayingUI = true;
@@ -136,4 +137,31 @@ public class Player_Movement_Script : MonoBehaviour
         }
     }
 
+    public void EndTalking()
+    {
+        UI.HideUI();
+        displayingUI = false;
+    }
+
+    public bool CheckTalking()
+    {
+        if(displayingUI)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    public void ChangeSpeechIcon(Sprite npcSprite)
+    {
+        if (npcSprite == null)
+        {
+            UI.SetImage(mySpeechIcon);
+        }
+        else
+        {
+            UI.SetImage(npcSprite);
+        }
+    }
 }
