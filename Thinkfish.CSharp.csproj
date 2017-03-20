@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3D94FCC4-FFE6-62A0-292B-61DF73553AB5}</ProjectGuid>
+    <ProjectGuid>{85E32B33-75E7-AC2A-EA89-DB4A8487BAA5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AssemblyName>Assembly-CSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -109,6 +109,7 @@
     <Compile Include="Assets\Scripts\Basic Code Library\ShowWhenTouching.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\TalkingNPC.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\UIManager.cs" />
+    <Compile Include="Assets\Scripts\Basic Code Library\UISlider.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\VignetteControl.cs" />
     <Compile Include="Assets\Scripts\Bookshelves challenge\BookSelection.cs" />
     <Compile Include="Assets\Scripts\Bookshelves challenge\KeepAndPassVariables.cs" />
