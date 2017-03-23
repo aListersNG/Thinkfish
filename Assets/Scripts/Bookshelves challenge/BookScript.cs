@@ -18,7 +18,11 @@ public class BookScript : MonoBehaviour {
     {
         if(GameController.GetComponent<BookSelection>().menuUp == false)
         {
-            this.GetComponent<Renderer>().enabled = false;
+            if(GameController.GetComponent<BookSelection>().bookReturned[BookNum] == false)
+            {
+                this.GetComponent<Renderer>().enabled = false;
+            }
+            
         }
         else
         {

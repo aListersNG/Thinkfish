@@ -26,7 +26,7 @@ public class ReturnReturnedBook : MonoBehaviour
         {
             if (GameController.GetComponent<BookSelection>().bookInUse == shelfnum)
             {
-                GameController.GetComponent<BookSelection>().menuUp = true;
+                GameController.GetComponent<BookSelection>().bookReturned[shelfnum] = true;
             }
         }
     }

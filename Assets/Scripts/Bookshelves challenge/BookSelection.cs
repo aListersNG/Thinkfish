@@ -13,7 +13,7 @@ public class BookSelection : MonoBehaviour
 
     private int books = 5;
 
-    public fixed bool bookReturned[Books];
+    public bool[] bookReturned;
 
     private float bookPos;
 
@@ -21,9 +21,9 @@ public class BookSelection : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        for (int i; i < 5; i++)
+        for (int i = 0; i < 5; i++)
         { 
-            bookReturned[Books] = false;
+            bookReturned[books] = false;
         }
     }
 	
