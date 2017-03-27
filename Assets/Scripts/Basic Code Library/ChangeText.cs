@@ -17,7 +17,7 @@ public class ChangeText : MonoBehaviour
     public Text m_Dialogue;
     public Sprite npcImage;
 
-    bool myInteract, writing, isTalking;
+    bool myInteract, writing, isTalking, beenTalkedTo;
     int i = -1;
 	int currentPos = 0;
     Player_Movement_Script myPlayer;
@@ -42,6 +42,13 @@ public class ChangeText : MonoBehaviour
             {
                 isTalking = true;
                 SetNextTarget();
+
+                if(!beenTalkedTo)
+                {
+                    beenTalkedTo = true;
+                    GameObject.FindGameObjectWithTag("FeedbackSystem").GetComponent<Feedback>().AddTalkedTo();
+                }
+
             }
             else if(isTalking)
             {

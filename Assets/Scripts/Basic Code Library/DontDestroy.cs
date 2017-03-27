@@ -10,13 +10,15 @@ public class DontDestroy : MonoBehaviour {
 	void Awake () {
 
         //Lets make sure we have one and only ONE instance going
-        if(instance != null)
+        if (instance != null)
         {
             Destroy(this.gameObject);
         }
-
-        instance = this.gameObject;
-        DontDestroyOnLoad(transform.gameObject);
+        else
+        {
+            instance = this.gameObject;
+            DontDestroyOnLoad(transform.gameObject);
+        }
 	}
 	
 }
