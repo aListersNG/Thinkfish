@@ -5,36 +5,99 @@ using UnityEngine;
 public class BookSelection : MonoBehaviour
 {
 
-    public GameObject BookSprite;
     public GameObject Highlighter;
+    public GameObject BookSprite1;
+    public GameObject BookSprite2;
+    public GameObject BookSprite3;
+    public GameObject BookSprite4;
+    public GameObject BookSprite5;
     public int booksCollected;
     public float bookInUse;
     public bool menuUp;
 
-    private int books = 5;
-
-    public bool[] bookReturned;
-
     private float bookPos;
 
+    private bool[] bookReturned = new bool[6];
 
     // Use this for initialization
     void Start()
     {
-        for (int i = 0; i < 5; i++)
-        { 
-            bookReturned[books] = false;
+        for (int i = 0; i < booksCollected; i++)
+        {
+            bookReturned[i] = false;
         }
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+
+
+    // Update is called once per frame
+    void Update()
     {
         //pressing space closes the menu and puts the highlighter off screen
         if (Input.GetKeyDown(KeyCode.Space))
         {
             menuUp = false;
             Highlighter.transform.position = new Vector3(0, -7.0f, 0);
+        }
+        //if the menu is up and the book isn't returned then it should show up on the menu
+        if (menuUp == false)
+        {
+            if (bookReturned[1] == false)
+            {
+                BookSprite1.GetComponent<Renderer>().enabled = false;
+            }
+            else
+            {
+                BookSprite1.GetComponent<Renderer>().enabled = true;
+            }
+
+            if (bookReturned[2] == false)
+            {
+                BookSprite2.GetComponent<Renderer>().enabled = false;
+            }
+            else
+            {
+                BookSprite2.GetComponent<Renderer>().enabled = true;
+            }
+
+            if (bookReturned[3] == false)
+            {
+                BookSprite3.GetComponent<Renderer>().enabled = false;
+            }
+            else
+            {
+                BookSprite3.GetComponent<Renderer>().enabled = true;
+            }
+
+            if (bookReturned[4] == false)
+            {
+                BookSprite4.GetComponent<Renderer>().enabled = false;
+            }
+            else
+            {
+                BookSprite4.GetComponent<Renderer>().enabled = true;
+            }
+
+            if (bookReturned[5] == false)
+            {
+                BookSprite5.GetComponent<Renderer>().enabled = false;
+            }
+            else
+            {
+                BookSprite5.GetComponent<Renderer>().enabled = true;
+            }
+        }
+        else
+        {
+            BookSprite1.GetComponent<Renderer>().enabled = true;
+            BookSprite2.GetComponent<Renderer>().enabled = true;
+            BookSprite3.GetComponent<Renderer>().enabled = true;
+            BookSprite4.GetComponent<Renderer>().enabled = true;
+            BookSprite5.GetComponent<Renderer>().enabled = true;
+        }
+        if (menuUp == false)
+        {
+
         }
     }
 

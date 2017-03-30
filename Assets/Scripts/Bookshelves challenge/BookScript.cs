@@ -8,26 +8,15 @@ public class BookScript : MonoBehaviour {
     public int BookNum;
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
-		
-	}
+        
+
+    }
 	
 	// Update is called once per frame
 	void Update()
     {
-        if(GameController.GetComponent<BookSelection>().menuUp == false)
-        {
-            if(GameController.GetComponent<BookSelection>().bookReturned[BookNum] == false)
-            {
-                this.GetComponent<Renderer>().enabled = false;
-            }
-            
-        }
-        else
-        {
-            this.GetComponent<Renderer>().enabled = true;
-        }
 
     }
 

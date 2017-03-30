@@ -88,6 +88,7 @@
     <Compile Include="Assets\Scripts\Basic Code Library\EnterRoom.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\EnterRoomE.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\ExitBuilding.cs" />
+    <Compile Include="Assets\Scripts\Basic Code Library\Feedback.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\Load_New_Scene.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\NPCMovement.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\Old Scripts\Press_E_To_Enter_New_Scene.cs" />

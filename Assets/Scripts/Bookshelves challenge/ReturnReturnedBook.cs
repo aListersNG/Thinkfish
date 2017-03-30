@@ -11,7 +11,7 @@ public class ReturnReturnedBook : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        this.GetComponent<Renderer>().enabled = false;
     }
 
     // Update is called once per frame
@@ -22,12 +22,6 @@ public class ReturnReturnedBook : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D col)
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            if (GameController.GetComponent<BookSelection>().bookInUse == shelfnum)
-            {
-                GameController.GetComponent<BookSelection>().bookReturned[shelfnum] = true;
-            }
-        }
+        
     }
 }
