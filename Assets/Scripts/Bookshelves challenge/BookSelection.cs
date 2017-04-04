@@ -11,9 +11,15 @@ public class BookSelection : MonoBehaviour
     public GameObject BookSprite3;
     public GameObject BookSprite4;
     public GameObject BookSprite5;
+    public GameObject Shelf0;
+    public GameObject Shelf1;
+    public GameObject Shelf2;
+    public GameObject Shelf3;
+    public GameObject Shelf4;
     public int booksCollected;
     public float bookInUse;
     public bool menuUp;
+    int score;
 
     private float bookPos;
 
@@ -42,7 +48,12 @@ public class BookSelection : MonoBehaviour
         //if the menu is up and the book isn't returned then it should show up on the menu
         if (menuUp == false)
         {
-            if (bookReturned[1] == false)
+            BookSprite1.GetComponent<Renderer>().enabled = false;
+            BookSprite2.GetComponent<Renderer>().enabled = false;
+            BookSprite3.GetComponent<Renderer>().enabled = false;
+            BookSprite4.GetComponent<Renderer>().enabled = false;
+            BookSprite5.GetComponent<Renderer>().enabled = false;
+            if (bookReturned[1] == true )
             {
                 BookSprite1.GetComponent<Renderer>().enabled = false;
             }
@@ -51,7 +62,7 @@ public class BookSelection : MonoBehaviour
                 BookSprite1.GetComponent<Renderer>().enabled = true;
             }
 
-            if (bookReturned[2] == false)
+            if (bookReturned[2] == true)
             {
                 BookSprite2.GetComponent<Renderer>().enabled = false;
             }
@@ -60,7 +71,7 @@ public class BookSelection : MonoBehaviour
                 BookSprite2.GetComponent<Renderer>().enabled = true;
             }
 
-            if (bookReturned[3] == false)
+            if (bookReturned[3] == true)
             {
                 BookSprite3.GetComponent<Renderer>().enabled = false;
             }
@@ -69,7 +80,7 @@ public class BookSelection : MonoBehaviour
                 BookSprite3.GetComponent<Renderer>().enabled = true;
             }
 
-            if (bookReturned[4] == false)
+            if (bookReturned[4] == true)
             {
                 BookSprite4.GetComponent<Renderer>().enabled = false;
             }
@@ -78,7 +89,7 @@ public class BookSelection : MonoBehaviour
                 BookSprite4.GetComponent<Renderer>().enabled = true;
             }
 
-            if (bookReturned[5] == false)
+            if (bookReturned[5] == true)
             {
                 BookSprite5.GetComponent<Renderer>().enabled = false;
             }
@@ -94,11 +105,79 @@ public class BookSelection : MonoBehaviour
             BookSprite3.GetComponent<Renderer>().enabled = true;
             BookSprite4.GetComponent<Renderer>().enabled = true;
             BookSprite5.GetComponent<Renderer>().enabled = true;
-        }
-        if (menuUp == false)
-        {
 
+            if (bookReturned[1] == true)
+            {
+                BookSprite1.GetComponent<Renderer>().enabled = false;
+            }
+            else
+            {
+                BookSprite1.GetComponent<Renderer>().enabled = true;
+            }
+
+            if (bookReturned[2] == true)
+            {
+                BookSprite2.GetComponent<Renderer>().enabled = false;
+            }
+            else
+            {
+                BookSprite2.GetComponent<Renderer>().enabled = true;
+            }
+
+            if (bookReturned[3] == true)
+            {
+                BookSprite3.GetComponent<Renderer>().enabled = false;
+            }
+            else
+            {
+                BookSprite3.GetComponent<Renderer>().enabled = true;
+            }
+
+            if (bookReturned[4] == true)
+            {
+                BookSprite4.GetComponent<Renderer>().enabled = false;
+            }
+            else
+            {
+                BookSprite4.GetComponent<Renderer>().enabled = true;
+            }
+
+            if (bookReturned[5] == true)
+            {
+                BookSprite5.GetComponent<Renderer>().enabled = false;
+            }
+            else
+            {
+                BookSprite5.GetComponent<Renderer>().enabled = true;
+            }
         }
+        
+        if(Shelf0.GetComponent<ReturnReturnedBook>().returned == true)
+        {
+            bookReturned[1] = true;
+            score++;
+        }
+        if (Shelf1.GetComponent<ReturnReturnedBook>().returned == true)
+        {
+            bookReturned[2] = true;
+            score++;
+        }
+        if (Shelf2.GetComponent<ReturnReturnedBook>().returned == true)
+        {
+            bookReturned[3] = true;
+            score++;
+        }
+        if (Shelf3.GetComponent<ReturnReturnedBook>().returned == true)
+        {
+            bookReturned[4] = true;
+            score++;
+        }
+        if (Shelf4.GetComponent<ReturnReturnedBook>().returned == true)
+        {
+            bookReturned[5] = true;
+            score++;
+        }
+
     }
 
     void OnTriggerStay2D(Collider2D col)
@@ -121,7 +200,7 @@ public class BookSelection : MonoBehaviour
             //open menu
             else
             {
-                Highlighter.transform.position = new Vector3(-5, -2.5f, 0);
+                Highlighter.transform.position = new Vector3(-5 + bookPos, -2.5f, 0);
                 menuUp = true;
             }
         }
