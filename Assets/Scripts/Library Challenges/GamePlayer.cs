@@ -7,7 +7,11 @@ public class GamePlayer : MonoBehaviour {
    
     //For displaying the game state
     public bool gamePlaying, gameOver, gamePaused, gameComplete;
-    
+
+    //Keep track of the times needed for feedback
+    float totalTimeDistracted = 0.0f;
+    float totalTimePlaying = 0.0f;
+
     //For random distractions
     float distractionTimer;
     public VignetteControl cameraControl;
@@ -45,9 +49,13 @@ public class GamePlayer : MonoBehaviour {
     }
 
     void Update()
-    {
+    { 
+        totalTimePlaying += Time.deltaTime;
+
         if(distractionTimer <= 0.0f)
         {
+            totalTimeDistracted += Time.deltaTime;
+
             if(!clickingCounts)
             {
                 clickingCounts = true;
@@ -83,6 +91,13 @@ public class GamePlayer : MonoBehaviour {
         else if(!gameComplete && !myBook.active)
         {
             distractionTimer -= Time.deltaTime;
+        }
+        else if(gameComplete)
+        {
+            Feedback feedback = GameObject.FindGameObjectWithTag("FeedbackSystem").GetComponent<Feedback>();
+            feedback.AddChallengeTime(totalTimePlaying);
+            feedback.AddTimeDistracted(totalTimeDistracted);
+            feedback.SetOverallScore(myScore.score);
         }
     }
 
