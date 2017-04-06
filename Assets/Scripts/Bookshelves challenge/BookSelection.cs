@@ -16,6 +16,7 @@ public class BookSelection : MonoBehaviour
     public GameObject Shelf2;
     public GameObject Shelf3;
     public GameObject Shelf4;
+    public GameObject ScoreKeeper;
     public int booksCollected;
     public float bookInUse;
     public bool menuUp;
@@ -32,6 +33,10 @@ public class BookSelection : MonoBehaviour
         {
             bookReturned[i] = false;
         }
+        if (ScoreKeeper == null)
+        {
+            ScoreKeeper = GameObject.FindWithTag("FeedbackSystem");
+        }
     }
 
 
@@ -45,14 +50,17 @@ public class BookSelection : MonoBehaviour
             menuUp = false;
             Highlighter.transform.position = new Vector3(0, -7.0f, 0);
         }
-        //if the menu is up and the book isn't returned then it should show up on the menu
+        //this large if statement decides which books are meant to be up. Sorry about the mess, I got stuck.
+        //if the menu isn't up
         if (menuUp == false)
         {
+            //by default the books shouldn't be seen
             BookSprite1.GetComponent<Renderer>().enabled = false;
             BookSprite2.GetComponent<Renderer>().enabled = false;
             BookSprite3.GetComponent<Renderer>().enabled = false;
             BookSprite4.GetComponent<Renderer>().enabled = false;
             BookSprite5.GetComponent<Renderer>().enabled = false;
+            //if the book has been returned then don't show the book.
             if (bookReturned[1] == true )
             {
                 BookSprite1.GetComponent<Renderer>().enabled = false;
