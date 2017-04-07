@@ -1,26 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BookSelection : MonoBehaviour
 {
 
     public GameObject Highlighter;
+    public GameObject Distraction;
+    //books
     public GameObject BookSprite1;
     public GameObject BookSprite2;
     public GameObject BookSprite3;
     public GameObject BookSprite4;
     public GameObject BookSprite5;
+    //shelves
     public GameObject Shelf0;
     public GameObject Shelf1;
     public GameObject Shelf2;
     public GameObject Shelf3;
     public GameObject Shelf4;
+
+
+    public Text ScoreDisplay;
     public GameObject ScoreKeeper;
     public int booksCollected;
     public float bookInUse;
     public bool menuUp;
-    int score;
+    public int score;
 
     private float bookPos;
 
@@ -163,29 +170,25 @@ public class BookSelection : MonoBehaviour
         if(Shelf0.GetComponent<ReturnReturnedBook>().returned == true)
         {
             bookReturned[1] = true;
-            score++;
         }
         if (Shelf1.GetComponent<ReturnReturnedBook>().returned == true)
         {
             bookReturned[2] = true;
-            score++;
         }
         if (Shelf2.GetComponent<ReturnReturnedBook>().returned == true)
         {
             bookReturned[3] = true;
-            score++;
         }
         if (Shelf3.GetComponent<ReturnReturnedBook>().returned == true)
         {
             bookReturned[4] = true;
-            score++;
         }
         if (Shelf4.GetComponent<ReturnReturnedBook>().returned == true)
         {
             bookReturned[5] = true;
-            score++;
         }
 
+        ScoreDisplay.text = "score : " + score;
     }
 
     void OnTriggerStay2D(Collider2D col)
@@ -213,4 +216,10 @@ public class BookSelection : MonoBehaviour
             }
         }
     }
+
+    void DistractPlayer()
+    {
+        //noot noot
+    }
 }
+  

@@ -37,6 +37,16 @@ public class ReturnReturnedBook : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) == true)
         {
             returned = true;
+            GameController.GetComponent<BookSelection>().score++;
+            GameController.GetComponent<BookSelection>().ScoreDisplay.text = "score : " + GameController.GetComponent<BookSelection>().score;
+            //ScoreDisplay.text = "score : " + score;
+            /*int chance = UnityEngine.Random.Range(0, 1);
+            if (chance == 1);
+            {
+                //GameController.GetComponent<BookSelection>.DistractPlayer();
+            }*/
         }
+        
+        
     }
 }
