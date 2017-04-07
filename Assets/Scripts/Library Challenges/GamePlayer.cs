@@ -95,9 +95,13 @@ public class GamePlayer : MonoBehaviour {
         else if(gameComplete)
         {
             Feedback feedback = GameObject.FindGameObjectWithTag("FeedbackSystem").GetComponent<Feedback>();
-            feedback.AddChallengeTime(totalTimePlaying);
-            feedback.AddTimeDistracted(totalTimeDistracted);
-            feedback.SetOverallScore(myScore.score);
+            if (feedback)
+            {
+                feedback.AddChallengeTime(totalTimePlaying);
+                feedback.AddTimeDistracted(totalTimeDistracted);
+                feedback.SetOverallScore(myScore.score);
+            }
+            Application.LoadLevel("Alpha_Home_outside");
         }
     }
 

@@ -8,9 +8,10 @@ public class Feedback : MonoBehaviour {
     int overallScore = 0, npcTalkedto = 0, trashPickedUp = 0;
     float timeTakenChallenges = 0.0f, timeDistracted = 0.0f;
     bool wonLibraryDeskChallenge;
+    int tasksComplete = 0;
     public bool dayFinished;
     bool textDisplayed;
-    public Text myText;
+    Text myText;
     List<string> feedbackText;
     
     void Start()
@@ -22,14 +23,20 @@ public class Feedback : MonoBehaviour {
     {
         if(dayFinished && !textDisplayed)
         {
-            //See what the feedback should say
-            DecideFeedback();
+            myText = GameObject.FindGameObjectWithTag("FeedbackText").GetComponent<Text>();
 
-            //Dispaly the appropriate feedback
-            ShowText();
+            if (myText)
+            {
+                //See what the feedback should say
+                DecideFeedback();
 
-            //Reset all the variables for the next day
-            ResetVariables();
+                //Dispaly the appropriate feedback
+                ShowText();
+
+                //Reset all the variables for the next day
+                ResetVariables();
+            }
+
         }
         else if(textDisplayed)
         {
@@ -46,6 +53,7 @@ public class Feedback : MonoBehaviour {
         overallScore = 0;
         npcTalkedto = 0;
         trashPickedUp = 0;
+        tasksComplete = 0;
         timeTakenChallenges = 0.0f;
         timeDistracted = 0.0f;
         dayFinished = false;
@@ -75,6 +83,7 @@ public class Feedback : MonoBehaviour {
         }
 
         overallScore += score;
+        tasksComplete++;
     }
 
     public void AddTimeDistracted(float time)
@@ -85,6 +94,11 @@ public class Feedback : MonoBehaviour {
     public void AddChallengeTime(float time)
     {
         timeTakenChallenges += time;
+    }
+
+    public int GetTasksCompleted()
+    {
+        return tasksComplete;
     }
 
     void DecideFeedback()
