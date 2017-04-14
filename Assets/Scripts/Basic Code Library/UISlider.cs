@@ -9,6 +9,8 @@ public class UISlider : MonoBehaviour {
     public Camera myCamera;
     public bool active;
 
+    public bool inFeedbackroom;
+
 	// Use this for initialization
 	void Start () {
         startX = transform.position.x;
@@ -61,7 +63,10 @@ public class UISlider : MonoBehaviour {
             }
             else
             {
-                GameObject.FindGameObjectWithTag("FeedbackSystem").GetComponent<Feedback>().dayFinished = true;
+                if (inFeedbackroom == true)
+                {
+                    GameObject.FindGameObjectWithTag("FeedbackSystem").GetComponent<Feedback>().dayFinished = true;
+                }
             }
         }
         else

@@ -28,10 +28,12 @@ public class BookSelection : MonoBehaviour
     public float bookInUse;
     public bool menuUp;
     public int score;
-
+    
     public bool gameOver;
 
     private float bookPos;
+    float totalTimePlaying = 0.0f;
+    float totalTimeDistracted = 0.0f;
 
     private bool[] bookReturned = new bool[6];
 
@@ -54,6 +56,8 @@ public class BookSelection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        totalTimePlaying += Time.deltaTime;
+
         //pressing space closes the menu and puts the highlighter off screen
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -202,8 +206,17 @@ public class BookSelection : MonoBehaviour
 
         if (gameOver == true)
         {
+            Feedback feedback = ScoreKeeper.GetComponent<Feedback>();
+            if (feedback)
+            {
+                feedback.AddChallengeTime(totalTimePlaying);
+                feedback.AddTimeDistracted(totalTimeDistracted);
+                feedback.SetOverallScore(score);
+            }
             Application.LoadLevel("Alpha_Home_outside");
         }
+
+       
 
         //display score
         ScoreDisplay.text = "score : " + score;
@@ -223,6 +236,7 @@ public class BookSelection : MonoBehaviour
                     bookPos = 0;
                 }
                 Highlighter.transform.position = new Vector3(-5 + bookPos, -2.5f, 0);
+
                 //record which book is in use currently
                 bookInUse = (bookPos * 2);
             }
