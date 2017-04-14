@@ -29,6 +29,8 @@ public class BookSelection : MonoBehaviour
     public bool menuUp;
     public int score;
 
+    public bool gameOver;
+
     private float bookPos;
 
     private bool[] bookReturned = new bool[6];
@@ -44,6 +46,7 @@ public class BookSelection : MonoBehaviour
         {
             ScoreKeeper = GameObject.FindWithTag("FeedbackSystem");
         }
+        gameOver = false;
     }
 
 
@@ -68,7 +71,7 @@ public class BookSelection : MonoBehaviour
             BookSprite4.GetComponent<Renderer>().enabled = false;
             BookSprite5.GetComponent<Renderer>().enabled = false;
             //if the book has been returned then don't show the book.
-            if (bookReturned[1] == true )
+            if (bookReturned[1] == true)
             {
                 BookSprite1.GetComponent<Renderer>().enabled = false;
             }
@@ -115,12 +118,13 @@ public class BookSelection : MonoBehaviour
         }
         else
         {
+            //if the meny is up then the books are up by default
             BookSprite1.GetComponent<Renderer>().enabled = true;
             BookSprite2.GetComponent<Renderer>().enabled = true;
             BookSprite3.GetComponent<Renderer>().enabled = true;
             BookSprite4.GetComponent<Renderer>().enabled = true;
             BookSprite5.GetComponent<Renderer>().enabled = true;
-
+            //If the book has been returned then it shouldn't show up.
             if (bookReturned[1] == true)
             {
                 BookSprite1.GetComponent<Renderer>().enabled = false;
@@ -166,8 +170,9 @@ public class BookSelection : MonoBehaviour
                 BookSprite5.GetComponent<Renderer>().enabled = true;
             }
         }
-        
-        if(Shelf0.GetComponent<ReturnReturnedBook>().returned == true)
+
+        //if books have been returned then set them to returned
+        if (Shelf0.GetComponent<ReturnReturnedBook>().returned == true)
         {
             bookReturned[1] = true;
         }
@@ -188,6 +193,19 @@ public class BookSelection : MonoBehaviour
             bookReturned[5] = true;
         }
 
+        //game over state
+        gameOver = true;
+        if (bookReturned[1] == false || bookReturned[2] == false && bookReturned[3] == false || bookReturned[4] == false || bookReturned[5] == false)
+        {
+            gameOver = false;
+        }
+
+        if (gameOver == true)
+        {
+            Application.LoadLevel("Alpha_Home_outside");
+        }
+
+        //display score
         ScoreDisplay.text = "score : " + score;
     }
 
