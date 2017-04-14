@@ -5,7 +5,7 @@ using UnityEngine;
 public class UISlider : MonoBehaviour {
 
     float startX, EndX;
-    bool gameOneComplete, gameTwoComplete;
+    bool gameOneComplete, gameTwoComplete, active;
 
 	// Use this for initialization
 	void Start () {
@@ -31,30 +31,33 @@ public class UISlider : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        float timeKeeper = Time.deltaTime;
-
-        if (EndX >= transform.position.x + timeKeeper)
+        if (active)
         {
-            transform.position = new Vector3(transform.position.x + timeKeeper, transform.position.y, transform.position.z);
+            float timeKeeper = Time.deltaTime * 5;
 
-            if(!gameOneComplete)
+            if (EndX >= transform.position.x + timeKeeper)
             {
-                if(transform.position.x >= startX + (510/3))
+                transform.position = new Vector3(transform.position.x + timeKeeper, transform.position.y, transform.position.z);
+
+                if (!gameOneComplete)
                 {
-                    Application.LoadLevel("Library_Challenge_1");
+                    if (transform.position.x >= startX + (510 / 3))
+                    {
+                        Application.LoadLevel("Library_Challenge_1");
+                    }
+                }
+                else if (!gameTwoComplete)
+                {
+                    if (transform.position.x >= startX + (510 / 3) * 2)
+                    {
+                        Application.LoadLevel("Bookshelf_Challenge");
+                    }
                 }
             }
-            else if(!gameTwoComplete)
+            else
             {
-                if (transform.position.x >= startX + (510 / 3)*2)
-                {
-                    Application.LoadLevel("Bookshelf_Challenge");
-                }
+                GameObject.FindGameObjectWithTag("FeedbackSystem").GetComponent<Feedback>().dayFinished = true;
             }
-        }
-        else
-        {
-            GameObject.FindGameObjectWithTag("FeedbackSystem").GetComponent<Feedback>().dayFinished = true;
         }
 	}
 }
