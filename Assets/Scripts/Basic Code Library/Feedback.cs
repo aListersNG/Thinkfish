@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Feedback : MonoBehaviour {
-
+    
     int overallScore = 0, npcTalkedto = 0, trashPickedUp = 0;
     float timeTakenChallenges = 0.0f, timeDistracted = 0.0f;
     bool wonLibraryDeskChallenge;
