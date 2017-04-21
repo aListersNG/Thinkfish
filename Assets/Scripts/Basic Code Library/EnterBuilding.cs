@@ -9,6 +9,7 @@ public class EnterBuilding : MonoBehaviour {
     public Camera myInsideCamera;
     GameObject myPlayer;
     bool canEnter;
+    public bool locked;
 
     void Awake()
     {
@@ -38,9 +39,12 @@ public class EnterBuilding : MonoBehaviour {
     {
         if(col.tag == "Player")
         {
-            col.GetComponent<Player_Movement_Script>().atDoor = true;
-            canEnter = true;
-            myPlayer = col.gameObject;
+            if (locked == false)
+            {
+                col.GetComponent<Player_Movement_Script>().atDoor = true;
+                canEnter = true;
+                myPlayer = col.gameObject;
+            }
         }
     }
 

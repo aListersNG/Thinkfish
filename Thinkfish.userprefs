@@ -1,6 +1,6 @@
 ﻿<Properties StartupItem="Thinkfish.CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Basic Code Library\Feedback.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Library Challenges\PutBookAway.cs">
     <Files>
       <File FileName="Assets\Scripts\Basic Code Library\ChangeText.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Library Challenges\GamePlayer.cs" Line="1" Column="1" />
@@ -9,6 +9,7 @@
       <File FileName="Assets\Scripts\Bookshelves challenge\BookSelection.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Bookshelves challenge\ReturnReturnedBook.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Basic Code Library\Feedback.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Library Challenges\PutBookAway.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

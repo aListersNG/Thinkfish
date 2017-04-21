@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\Basic Code Library\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\ChangeText.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\DontDestroy.cs" />
+    <Compile Include="Assets\Scripts\Basic Code Library\DoorLocker.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\EnterBuilding.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\EnterRoom.cs" />
     <Compile Include="Assets\Scripts\Basic Code Library\EnterRoomE.cs" />
@@ -130,6 +131,7 @@
     <Compile Include="Assets\Scripts\Library Challenges\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\Library Challenges\Stamp.cs" />
     <Compile Include="Assets\Scripts\Scene Main Menu\Load_Level_Script.cs" />
+    <Compile Include="Assets\TutorialPDA.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Shaders\Vignette.shader" />

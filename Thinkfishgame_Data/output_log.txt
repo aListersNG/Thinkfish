@@ -7,19 +7,29 @@ Direct3D:
     VRAM:     977 MB
     Driver:   9.18.13.4475
 Begin MonoManager ReloadAssembly
-Platform assembly: \\StuHome\HomeDrive7$\1400387\thinkfish\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading \\StuHome\HomeDrive7$\1400387\thinkfish\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: \\StuHome\HomeDrive7$\1400387\thinkfish\Thinkfish\Thinkfishgame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading \\StuHome\HomeDrive7$\1400387\thinkfish\Thinkfish\Thinkfishgame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: \\StuHome\HomeDrive7$\1400387\thinkfish\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading \\StuHome\HomeDrive7$\1400387\thinkfish\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: \\StuHome\HomeDrive7$\1400387\thinkfish\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading \\StuHome\HomeDrive7$\1400387\thinkfish\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: \\StuHome\HomeDrive7$\1400387\thinkfish\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading \\StuHome\HomeDrive7$\1400387\thinkfish\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  1.066 seconds
-Platform assembly: \\StuHome\HomeDrive7$\1400387\thinkfish\Thinkfish\Thinkfishgame_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: \\StuHome\HomeDrive7$\1400387\thinkfish\Thinkfish\Thinkfishgame_Data\Managed\System.dll (this message is harmless)
+Platform assembly: M:\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading M:\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: M:\Thinkfish\Thinkfishgame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading M:\Thinkfish\Thinkfishgame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: M:\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading M:\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: M:\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading M:\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: M:\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading M:\Thinkfish\Thinkfishgame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.618 seconds
+Platform assembly: M:\Thinkfish\Thinkfishgame_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: M:\Thinkfish\Thinkfishgame_Data\Managed\System.dll (this message is harmless)
 desktop: 1440x900 60Hz; virtual: 1440x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.068904 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.731147 ms
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1024.
+Total: 0.278056 ms (FindLiveObjects: 0.039768 ms CreateObjectMapping: 0.027260 ms MarkObjects: 0.193067 ms  DeleteObjects: 0.015394 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2170 -> priority: 1 

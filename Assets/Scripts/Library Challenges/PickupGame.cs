@@ -30,7 +30,7 @@ public class PickupGame : MonoBehaviour
 
             if (howManyBooks < 5)
             {
-                Instantiate(prefab, new Vector3(UnityEngine.Random.Range(0f, 5f), -2.5f, 0), Quaternion.identity);
+                Instantiate(prefab, new Vector3(UnityEngine.Random.Range(24f, 32f), -39.5f, 0), Quaternion.identity);
                 howManyBooks++;
             }
         }
