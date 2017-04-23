@@ -17,7 +17,7 @@ public class DontDestroy : MonoBehaviour {
         else
         {
             instance = this.gameObject;
-            DontDestroyOnLoad(transform.gameObject);
+            DontDestroyOnLoad(this.gameObject);
         }
 	}
 	
