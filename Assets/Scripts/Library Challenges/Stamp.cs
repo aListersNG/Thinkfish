@@ -55,17 +55,9 @@ public class Stamp : MonoBehaviour {
     {
         if (!beingHeld)
         {
-            if (col.tag == "EarlyStamp")
+            if (col.tag == "ReturnedStamp")
             {
                 gameManager.GetComponent<GamePlayer>().BookCheck(false);
-                gameManager.GetComponent<GamePlayer>().HideBookDates();
-                myBook.ResetCamera();
-                transform.position = startPos;
-            }
-            else if (col.tag == "LateStamp")
-            {
-                gameManager.GetComponent<GamePlayer>().BookCheck(true);
-                gameManager.GetComponent<GamePlayer>().HideBookDates();
                 myBook.ResetCamera();
                 transform.position = startPos;
             }

@@ -14,7 +14,6 @@ public class BackToDesk : MonoBehaviour {
 
     void ResetBook()
     {
-        myPlayer.HideBookDates();
         myBook.ResetCamera();
         myBook.active = false;
         myBook.gameObject.GetComponent<DragNonUI>().ifActive = false;

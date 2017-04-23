@@ -31,7 +31,6 @@ public class BookOpen : MonoBehaviour {
             //Switch the cameras
             bookCamera.enabled = true;
             deskCamera.enabled = false;
-            myPlayer.ShowBookDates();
         }
     }
 

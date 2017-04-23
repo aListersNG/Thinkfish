@@ -8,9 +8,6 @@ public class LibraryNPC : MonoBehaviour {
     //For holding the Game Manager
     public GameObject gameManager;
 
-    //The different game types that can be used
-    //public enum GameType { CheckInBook, PrinterUsage, CheckInComputer };
-
     //For holding all needed giveable items
     public GameObject myBook, myCash, libraryCard;
 
@@ -147,13 +144,6 @@ public class LibraryNPC : MonoBehaviour {
         {
            PlayThroughText();
         }
-        else if(questType == GamePlayer.GameType.CheckInBookLate)
-        {
-            if(gameManager.GetComponent<GamePlayer>().StampedLate())
-            {
-                GiveCash();
-            }
-        }
     }
 
     void RandomGameType()
@@ -172,10 +162,7 @@ public class LibraryNPC : MonoBehaviour {
             case GamePlayer.GameType.CheckInBook:
                 textToDisplay = bookCheckIn;
                 break;
-
-            case GamePlayer.GameType.CheckInBookLate:
-                textToDisplay = bookCheckIn;
-                break;
+                
 
             case GamePlayer.GameType.CheckInComputer:
                 textToDisplay = computerCheckIn;
@@ -231,10 +218,6 @@ public class LibraryNPC : MonoBehaviour {
                 GiveBook();
                 break;
 
-            case GamePlayer.GameType.CheckInBookLate:
-                GiveBook();
-                break;
-
             case GamePlayer.GameType.PrinterUsage:
                 GiveCash();
                 break;
@@ -254,11 +237,6 @@ public class LibraryNPC : MonoBehaviour {
         {
             case GamePlayer.GameType.CheckInBook:
                 ResetBook();
-                break;
-
-            case GamePlayer.GameType.CheckInBookLate:
-                ResetBook();
-                ResetCash();
                 break;
 
             case GamePlayer.GameType.PrinterUsage:
