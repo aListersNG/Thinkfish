@@ -38,14 +38,6 @@ public class Feedback : MonoBehaviour {
             }
 
         }
-        else if(textDisplayed)
-        {
-            if(Input.GetKeyDown(KeyCode.Space))
-            {
-                myText.text = "";
-                textDisplayed = false;
-            }
-        }
     }
 
     void ResetVariables()
@@ -112,7 +104,7 @@ public class Feedback : MonoBehaviour {
         {
             feedbackText.Add("Orla did excellently at the tasks I assigned her. She’s clearly a Hard Worker.");
 
-            if (timeTakenChallenges <= 150)
+            if (timeTakenChallenges <= 200)
             {
                 feedbackText.Add("Orla has Excellent time management skill, she got her work done in record time!");
             }

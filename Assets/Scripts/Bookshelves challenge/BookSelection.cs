@@ -211,7 +211,7 @@ public class BookSelection : MonoBehaviour
             {
                 feedback.AddChallengeTime(totalTimePlaying);
                 feedback.AddTimeDistracted(totalTimeDistracted);
-                feedback.SetOverallScore(score);
+                feedback.SetOverallScore((score*5));
             }
             Application.LoadLevel("Alpha_Home_outside");
         }
